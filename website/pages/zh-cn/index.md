@@ -312,7 +312,7 @@ sections:
 # textBlock - Information
   - type: "textBlock" 
     id: ""
-    bgImg: "/gallery3/Steam Buns.webp"
+    bgImg: "sweet_home_kitchen2.webp"
     bgImgAlt: "Sweet Home Kitchen 家之味 - Best Food Today"
     bgColor: "#000"
     bgOpacity: "0.4" # 0~1
@@ -354,7 +354,7 @@ sections:
 footer:
   mode: 1 # 1
   noMarginTop: true
-  bgImg: "Sweet Home Kitchen 家之味44.webp"
+  bgImg: "Sweet Home Kitchen 家之味.webp"
   bgImgAlt: ""
   bgColor: "#000"
   bgOpacity: "0.7" # 0~1
