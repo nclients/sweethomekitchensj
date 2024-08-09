@@ -17,7 +17,7 @@ tel: "408-216-0979"
 banner:
   text: 
     # - boldText: "🥳 Special Offer"
-    - boldText: "冷凍手作水餃現金８折優惠。家庭套餐外賣現金９折優惠，午餐米飯免費。家庭套餐選擇3道菜$40，米飯免費。"
+    - boldText: "冷凍手作水餃現金８折優惠。家庭套餐外賣現金９折優惠，午餐米飯免費。家庭套餐選擇3道菜$40，米飯免費。提供自取和送餐服務。"
   # add more text...
   textColor: "#ffffff"
   bgColor: "#E7383D"
@@ -315,7 +315,7 @@ sections:
     bgImg: "/sweet_home_kitchen2.webp"
     bgImgAlt: "Sweet Home Kitchen 家之味 - Best Food Today"
     bgColor: "#000"
-    bgOpacity: "0.4" # 0~1
+    bgOpacity: "0.6" # 0~1
     title: 
       - "新功能！在線訂餐"
     titleColor: "#ffffff"
