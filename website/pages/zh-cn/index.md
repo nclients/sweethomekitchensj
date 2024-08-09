@@ -312,7 +312,7 @@ sections:
 # textBlock - Information
   - type: "textBlock" 
     id: ""
-    bgImg: "sweet_home_kitchen2.webp"
+    bgImg: "/sweet_home_kitchen2.webp"
     bgImgAlt: "Sweet Home Kitchen 家之味 - Best Food Today"
     bgColor: "#000"
     bgOpacity: "0.4" # 0~1
