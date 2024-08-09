@@ -74,7 +74,8 @@ sections:
     bgColor: "#000000"
     bgOpacity: "0.2" # 0~1
     title: 
-      - "Sweet Home Kitchen 家之味"
+      - "Sweet Home Kitchen"
+      - "家之味"
     titleColor: "#ffffff"
     description: 
       - "A Chinese restaurant offers Jiangsu and Zhejiang dishes dedicated to restoring the original taste of food."
@@ -93,7 +94,7 @@ sections:
     bannerImg: "sweet_home_kitchen.webp"
     imgAlt: "Sweet Home Kitchen 家之味 - Best Food Today"
     imgPosition: "imgLeft" # imgLeft | imgRight
-    bannerMarginTopMobile: 20
+    bannerMarginTopMobile: 32
     imgRounded: "3xl" # sm | md | lg | xl | 2xl | 3xl | full
    
     bottomRounded: "3xl" # sm | md | lg | xl | 2xl | 3xl | full
