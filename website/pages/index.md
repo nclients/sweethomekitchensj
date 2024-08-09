@@ -70,6 +70,7 @@ sections:
     bgVideoId: "1g5723hgukt5FVmEKhN2CDfAg16k1c"
     bgImg: "background_image.webp"
     bgImgAlt: "Sweet Home Kitchen 家之味 - Best Food Today"
+    isTextAlignCenter: true
     bgColor: "#000000"
     bgOpacity: "0.2" # 0~1
     title: 
