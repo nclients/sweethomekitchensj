@@ -402,11 +402,11 @@ footer:
 
   paymentMethod: "applePay,visa,amex,alipay,mastercard" # alipay,applePay,cash,discover,googlePay,jcb,maestro,mastercard,stripe,unionPay,visa,weChatPay,payPal
 
-  seo:
-    metaDescription: "A Chinese restaurant located at 1312 Saratoga Ave, San Jose, CA, offers Jiangsu and Zhejiang dishes. We offer takeout and delivery."
-    keywords: ""
-    img: ""
-    thisPageUrl: ""
-    locale: "en_US" # zh_TW | zh_CN
+seo:
+  metaDescription: "A Chinese restaurant located at 1312 Saratoga Ave, San Jose, CA, offers Jiangsu and Zhejiang dishes. We offer takeout and delivery."
+  keywords: ""
+  img: ""
+  thisPageUrl: ""
+  locale: "en_US" # zh_TW | zh_CN
 ---
 <!-- hello world -->

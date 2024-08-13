@@ -393,11 +393,11 @@ footer:
   paymentMethod: "applePay,visa,amex,alipay,mastercard" # alipay,applePay,cash,discover,googlePay,jcb,maestro,mastercard,stripe,unionPay,visa,weChatPay,payPal
 
   # optional
-  seo:
-    metaDescription: "我們是一家专注于江浙菜，致力于还原食物原汁原味的中餐廳。位於圣何塞市的萨拉托加大道。我们提供外卖和送餐服务，让您随时享受地道的美食！"
-    keywords: ""
-    img: ""
-    thisPageUrl: ""
-    locale: "zh_TW" # zh_TW | zh_CN
+seo:
+  metaDescription: "我們是一家专注于江浙菜，致力于还原食物原汁原味的中餐廳。位於圣何塞市的萨拉托加大道。我们提供外卖和送餐服务，让您随时享受地道的美食！"
+  keywords: ""
+  img: ""
+  thisPageUrl: ""
+  locale: "zh_TW" # zh_TW | zh_CN
 ---
 <!-- hello world -->
