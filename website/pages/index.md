@@ -408,5 +408,7 @@ seo:
   img: ""
   thisPageUrl: ""
   locale: "en_US" # zh_TW | zh_CN
+  canonicalHref: "https://www.sweethomekitchensj.com/"
+  
 ---
 <!-- hello world -->

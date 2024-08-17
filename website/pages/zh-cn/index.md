@@ -399,5 +399,7 @@ seo:
   img: ""
   thisPageUrl: ""
   locale: "zh_TW" # zh_TW | zh_CN
+  canonicalHref: "https://www.sweethomekitchensj.com/zh-cn/"
+
 ---
 <!-- hello world -->
