@@ -116,7 +116,7 @@ sections:
     description: 
       - "從招牌金陵鹽水鴨到溫馨的麵條和餃子，統統等你來品嚐！"
     descriptionColor: "#333333"
-    folderPath: "gallery3"
+    folderPath: "gallery"
     showImgName: false # true | false
     imgNameColor: "#000000"
     menuItemImgRounded: "md" # sm | md | lg | xl | 2xl | 3xl | full
