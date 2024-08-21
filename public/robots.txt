@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /$
+Allow: /zh-cn/$
+Allow: /gallery/
+Disallow: /
+Sitemap: https://www.sweethomekitchensj.com/sitemap.xml

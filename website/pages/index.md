@@ -544,6 +544,22 @@ seo:
           price: "17.95"
           image: ""
         
-  
+  offers:
+  - name: "20% off cash discount on frozen handmade dumplings"
+    description: "Enjoy a 20% discount when you pay with cash for our frozen handmade dumplings."
+    priceCurrency: "USD"
+    price: "varies"
+  - name: "10% off cash discount on family meal takeout"
+    description: "Get 10% off when you pay with cash for family meal takeout."
+    priceCurrency: "USD"
+    price: "varies"
+  - name: "Family Set: Any 3 dishes for $40"
+    description: "Choose any 3 dishes for just $40, includes free rice."
+    priceCurrency: "USD"
+    price: "40"
+  - name: "Free rice with lunch"
+    description: "Receive free rice with any lunch order."
+    priceCurrency: "USD"
+    price: "0"
 ---
 <!-- hello world -->

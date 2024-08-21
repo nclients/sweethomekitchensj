@@ -3,10 +3,10 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "npm run generate-robots && npm run generate-sitemap && astro dev",
     "start": "astro dev",
     "check": "rm -rf dist/ && astro check",
-    "build": "npm run generate-robots && npm run generate-sitemap && astro check && npm run check && astro build",
+    "build": "astro check && npm run check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "generate-sitemap": "node theme/theme/utils/generate-sitemap.js",
