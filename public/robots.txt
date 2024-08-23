@@ -2,6 +2,7 @@ User-agent: *
 Allow: /$
 Allow: /zh-cn/$
 Allow: /gallery/
-Allow: sitemap.xml
+Allow: /robots.txt
+Allow: /sitemap.xml
 Disallow: /
 Sitemap: https://www.sweethomekitchensj.com/sitemap.xml
