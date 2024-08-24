@@ -13,7 +13,7 @@ dataGlfCuid: ""
 dataGlfRuid: ""
 orderOnlineLink: "https://www.bestfoodtodayus.com/ordering/?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
 tableReservationLink: ""
-tel: "408-216-0979"
+tel: "408-689-7799"
 
 banner:
   text: 
@@ -457,7 +457,7 @@ seo:
     longitude: -121.98031741934436 # -73.982294
   url: "" # https://www.example.com
 
-  telephone: "+1-408-216-0979" # +1212345678
+  telephone: "+1-408-689-7799" # +1212345678
 
   servesCuisine: ["Chinese", "Jiangsu and Zhejiang dishes"]
   priceRange: "$$" # $,$$,$$$,$$$$. $->Inexpensive, $$->Moderate, $$$->Expensive, $$$$->Luxury

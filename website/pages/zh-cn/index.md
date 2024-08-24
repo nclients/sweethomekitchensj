@@ -12,7 +12,7 @@ dataGlfCuid: ""
 dataGlfRuid: ""
 orderOnlineLink: "https://www.bestfoodtodayus.com/ordering/?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
 tableReservationLink: ""
-tel: "408-216-0979"
+tel: "408-689-7799"
 
 banner:
   text: 
@@ -84,9 +84,9 @@ sections:
     imgAlt: "Sweet Home Kitchen 家之味 - Best Food Today"
     imgPosition: "imgLeft" # imgLeft | imgRight
     bannerMarginTopMobile: 32
-    imgRounded: "3xl" # sm | md | lg | xl | 2xl | 3xl | full
+    imgRounded: "" # sm | md | lg | xl | 2xl | 3xl | full
    
-    bottomRounded: "3xl" # sm | md | lg | xl | 2xl | 3xl | full
+    bottomRounded: "" # sm | md | lg | xl | 2xl | 3xl | full
     # bottomInfo: "We offer Takeout"
 
 # Video
@@ -334,7 +334,7 @@ sections:
     iframeUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.782295865214!2d-121.98282168869802!3d37.30029317199242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcbb7733ebcbf%3A0x30270741189d8d03!2sSweetHome%20Kitchen!5e0!3m2!1sen!2sus!4v1722820862843!5m2!1sen!2sus"
     addTelBtn: true
     getDirectionBtnInsteadText: "導航到餐廳"
-    telInsteadText: "電話：408-216-0979"
+    telInsteadText: "電話：408-689-7799"
  
  # The modal will only appear once within 30 minutes."
   - type: "modal" 
