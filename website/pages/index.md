@@ -401,6 +401,10 @@ footer:
   yelpLink: ""
 
   paymentMethod: "applePay,visa,amex,alipay,mastercard" # alipay,applePay,cash,discover,googlePay,jcb,maestro,mastercard,stripe,unionPay,visa,weChatPay,payPal
+  addressInsteadText: ""
+  address: 
+    - address: "1312 Saratoga Ave, San Jose, CA 95129"
+      url: "https://maps.app.goo.gl/Kqk8pwJxqrkELa2a9"
 
 
 seo:

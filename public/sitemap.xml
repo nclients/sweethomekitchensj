@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-       xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+       xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" >
     
       <url>
         <loc>https://www.sweethomekitchensj.com/</loc>
-        <lastmod>2024-08-23</lastmod>
+        <lastmod>2024-09-13</lastmod>
         <image:image>
           <image:loc>https://www.sweethomekitchensj.com/gallery/003 SweetHome Kitchen 家之味4.webp</image:loc>
           <image:title>SweetHome Kitchen 家之味4</image:title>
@@ -102,10 +102,108 @@
           <image:loc>https://www.sweethomekitchensj.com/gallery/大煮干丝.webp</image:loc>
           <image:title>大煮干丝</image:title>
         </image:image>
+             
       </url>
       <url>
         <loc>https://www.sweethomekitchensj.com/zh-cn/</loc>
-        <lastmod>2024-08-23</lastmod>
-        
+        <lastmod>2024-09-13</lastmod>
+        <image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/003 SweetHome Kitchen 家之味4.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味4</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/004 SweetHome Kitchen 家之味6.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味6</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/004 SweetHome Kitchen 家之味8.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味8</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/004_SweetHome Kitchen __家之味5.webp</image:loc>
+          <image:title>SweetHome Kitchen   家之味5</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/005 SweetHome Kitchen 家之味9.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味9</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/006 SweetHome Kitchen 家之味11.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味11</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/007 SweetHome Kitchen 家之味12.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味12</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/008 SweetHome Kitchen 家之味4.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味4</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/009 SweetHome Kitchen 家之味 4.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味 4</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/011SweetHome Kitchen 家之味20.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味20</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/012 SweetHome Kitchen 家之味21.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味21</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/013 SweetHome Kitchen 家之味19.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味19</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/Bell Pepper Omelette.webp</image:loc>
+          <image:title>Bell Pepper Omelette</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/Braised Pork Hock.webp</image:loc>
+          <image:title>Braised Pork Hock</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/Braised Pork w Bean Curd Sheet.webp</image:loc>
+          <image:title>Braised Pork W Bean Curd Sheet</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/Five Color Shrimp.webp</image:loc>
+          <image:title>Five Color Shrimp</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/Orange Chicken.webp</image:loc>
+          <image:title>Orange Chicken</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/Salted duck.webp</image:loc>
+          <image:title>Salted Duck</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/Shanghai Pork Ribs.webp</image:loc>
+          <image:title>Shanghai Pork Ribs</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/Shu Style Gold Pomfret.webp</image:loc>
+          <image:title>Shu Style Gold Pomfret</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/Stir Fried Fish Filet w Veggies.webp</image:loc>
+          <image:title>Stir Fried Fish Filet W Veggies</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/SweetHome Kitchen 家之味1.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味1</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/SweetHome Kitchen 家之味10.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味10</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/SweetHome Kitchen 家之味13.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味13</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/SweetHome Kitchen 家之味14.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味14</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/SweetHome Kitchen 家之味5.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味5</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/SweetHome Kitchen 家之味7.webp</image:loc>
+          <image:title>SweetHome Kitchen 家之味7</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/Tonba Fish Filet.webp</image:loc>
+          <image:title>Tonba Fish Filet</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/Twice Cooked Pork Lion.webp</image:loc>
+          <image:title>Twice Cooked Pork Lion</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/Walnut Shrimp.webp</image:loc>
+          <image:title>Walnut Shrimp</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/Xian Sour Spicy Noodle Soup.webp</image:loc>
+          <image:title>Xian Sour Spicy Noodle Soup</image:title>
+        </image:image><image:image>
+          <image:loc>https://www.sweethomekitchensj.com/gallery/大煮干丝.webp</image:loc>
+          <image:title>大煮干丝</image:title>
+        </image:image>
+             
       </url>
   </urlset>
