@@ -16,7 +16,7 @@ tableReservationLink: ""
 tel: "408-689-7799"
 
 banner:
-  text: 
+  text:
     # - boldText: "🥳 Special Offer"
     - boldText: "20% off cash discount"
     - text: " on frozen handmade dumplings."
@@ -37,7 +37,7 @@ banner:
 # header
 header:
   logoSize: 45
-  textAfterLogo: 
+  textAfterLogo:
     text: ""
     size: 16
     color: ""
@@ -61,8 +61,8 @@ header:
   otherBtnHref: "https://www.bestfoodtodayus.com/ordering/?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
 
 sections:
-# hero
-  - type: "hero" 
+  # hero
+  - type: "hero"
     id: ""
     height: "100" # Conditionally use only when sectionType is imgBg
     sectionType: "video" # video | imgWithText | imgBg
@@ -73,11 +73,11 @@ sections:
     isTextAlignCenter: true
     bgColor: "#000000"
     bgOpacity: "0.2" # 0~1
-    title: 
+    title:
       - "Sweet Home Kitchen"
       - "家之味"
     titleColor: "#ffffff"
-    description: 
+    description:
       - "A Chinese restaurant offers Jiangsu and Zhejiang dishes dedicated to restoring the original taste of food."
     descriptionColor: "#ffffff"
 
@@ -96,24 +96,24 @@ sections:
     imgPosition: "imgLeft" # imgLeft | imgRight
     bannerMarginTopMobile: 32
     imgRounded: "3xl" # sm | md | lg | xl | 2xl | 3xl | full
-   
+
     bottomRounded: "3xl" # sm | md | lg | xl | 2xl | 3xl | full
     # bottomInfo: "We offer Takeout"
 
-# Video
+  # Video
   - type: "video"
     id: ""
-    title: 
+    title:
       - "Discover Culinary Comfort"
-    description: 
-      - "Dive into a diverse array of dishes at Sweet Home Kitchen, where Jiangsu and Zhejiang  cuisine meets classic Chinese flavors." 
+    description:
+      - "Dive into a diverse array of dishes at Sweet Home Kitchen, where Jiangsu and Zhejiang  cuisine meets classic Chinese flavors."
     videoType: "gjw" # vimeo | gjw | youtube
-    videoId: 
+    videoId:
       - "1g5723hgukt5FVmEKhN2CDfAg16k1c"
       - "1gtkmtam2me6f0kfsaJV9gcfE12s1c"
     isOnlyDisplayOnMobile: false
 
-# Gallery  
+  # Gallery
   - type: "gallery"
     id: "gallery"
     mode: 3 # 1 - 3
@@ -121,10 +121,10 @@ sections:
     bgImgAlt: ""
     bgColor: ""
     bgOpacity: "" # 0~1
-    title: 
+    title:
       - "A Flavorful Journey Awaits"
     titleColor: "#000000"
-    description: 
+    description:
       - "Our menu showcases everything from our nanjing salted duck to comforting noodles and dumplings."
     descriptionColor: "#333333"
     folderPath: "gallery"
@@ -132,211 +132,208 @@ sections:
     imgNameColor: "#000000"
     menuItemImgRounded: "md" # sm | md | lg | xl | 2xl | 3xl | full
 
+  # # textBlock
+  #   - type: "textBlock"
+  #     id: "about-us"
+  #     bgImg: ""
+  #     bgImgAlt: ""
+  #     bgColor: "#000"
+  #     bgOpacity: "" # 0~1
+  # title:
+  #   - "A Corner of Tradition and Flavor"
+  # titleColor: "#000000"
+  # description:
+  #   - "From the heart of Newark, CA, Crabby Crabby Restaurant is a corner where tradition meets flavor. Every corner of our restaurant is infused with authenticity, from the décor to every bite we serve."
+  #   # - text: "We serve Imperial Soup dishes plus other Asian dishes. Feel free to message us about inquiries! We'll get back to you as soon as we can!"
+  # descriptionColor: "#000000"
 
-# # textBlock 
-#   - type: "textBlock" 
-#     id: "about-us"
-#     bgImg: ""
-#     bgImgAlt: ""
-#     bgColor: "#000"
-#     bgOpacity: "" # 0~1
-    # title: 
-    #   - "A Corner of Tradition and Flavor"
-    # titleColor: "#000000"
-    # description: 
-    #   - "From the heart of Newark, CA, Crabby Crabby Restaurant is a corner where tradition meets flavor. Every corner of our restaurant is infused with authenticity, from the décor to every bite we serve."
-    #   # - text: "We serve Imperial Soup dishes plus other Asian dishes. Feel free to message us about inquiries! We'll get back to you as soon as we can!"
-    # descriptionColor: "#000000"
-
-# textBlock - only title
-  - type: "textBlock" 
+  # textBlock - only title
+  - type: "textBlock"
     id: "about-us"
     bgImg: ""
     bgImgAlt: ""
     bgColor: ""
     bgOpacity: "" # 0~1
-    title: 
+    title:
       - "About Us"
     titleColor: "#000000"
-    description: 
+    description:
       - "A Chinese restaurant offers Jiangsu and Zhejiang dishes dedicated to restoring the original taste of food. We provide traditional home flavor food with fresh ingredients and heart work. "
       - "Taste of traditional food, taste of happiness."
     descriptionColor: ""
 
-# # feature - 2
-#   - type: "feature" 
-#     id: ""
-#     height: "100" # Conditionally use only when sectionType is imgBg
-#     noMarginTop: true
-#     sectionType: "imgWithText" # video | imgWithText | imgBg
-#     bgVideoType: "" # youtube | vimeo | gjw
-#     bgVideoId: ""
-#     bgImg: ""
-#     bgImgAlt: ""
-#     bgColor: ""
-#     bgOpacity: "" # 0~1
-#     title: 
-#       - "Our Mission"
-#     titleColor: "#000000"
-#     description: 
-#       - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-#     # descriptionColor: "#000000"
-#     # # title2: 
-#     # #   - "A Corner of Tradition and Flavor"
-#     # # title2Color: "#000000"
-#     # # description2: 
-#     # #   - "From the heart of Newark, CA, Crabby Crabby Restaurant is a corner where tradition meets flavor. Every corner of our restaurant is infused with authenticity, from the décor to every bite we serve."
-#     # #   # - text: "We serve Imperial Soup dishes plus other Asian dishes. Feel free to message us about inquiries! We'll get back to you as soon as we can!"
-#     # # description2Color: "#000000"
-#     # # title2: 
-#     # #   - "Committed to the Community"
-#     # # title2Color: "#000000"
-#     # # description2: 
-#     # #   - "We are proud to be an active part of the Newark, CA community. Through special events, collaborations with local venues and participation in community initiatives, Crabby Crabby Restaurant seeks to strengthen the ties that bind us together."
-#     # # description2Color: "#000000"
-#     # isTextAlignCenter: false
+  # # feature - 2
+  #   - type: "feature"
+  #     id: ""
+  #     height: "100" # Conditionally use only when sectionType is imgBg
+  #     noMarginTop: true
+  #     sectionType: "imgWithText" # video | imgWithText | imgBg
+  #     bgVideoType: "" # youtube | vimeo | gjw
+  #     bgVideoId: ""
+  #     bgImg: ""
+  #     bgImgAlt: ""
+  #     bgColor: ""
+  #     bgOpacity: "" # 0~1
+  #     title:
+  #       - "Our Mission"
+  #     titleColor: "#000000"
+  #     description:
+  #       - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  #     # descriptionColor: "#000000"
+  #     # # title2:
+  #     # #   - "A Corner of Tradition and Flavor"
+  #     # # title2Color: "#000000"
+  #     # # description2:
+  #     # #   - "From the heart of Newark, CA, Crabby Crabby Restaurant is a corner where tradition meets flavor. Every corner of our restaurant is infused with authenticity, from the décor to every bite we serve."
+  #     # #   # - text: "We serve Imperial Soup dishes plus other Asian dishes. Feel free to message us about inquiries! We'll get back to you as soon as we can!"
+  #     # # description2Color: "#000000"
+  #     # # title2:
+  #     # #   - "Committed to the Community"
+  #     # # title2Color: "#000000"
+  #     # # description2:
+  #     # #   - "We are proud to be an active part of the Newark, CA community. Through special events, collaborations with local venues and participation in community initiatives, Crabby Crabby Restaurant seeks to strengthen the ties that bind us together."
+  #     # # description2Color: "#000000"
+  #     # isTextAlignCenter: false
 
-#     # addOrderOnlineBtn: false
-#     # orderOnlineBtnInsteadText: "See MENU & Order"
-#     # addTableReservationBtn: false
-#     # tableReservationBtnInsteadText: ""
-#     # showOtherBtn: false
-#     # btn1Text: "See MENU & Order" # default: order online
-#     # btn1Href: "#" # default: order online
-#     # btn2Text: "" # default: table reservation
-#     # btn2Href: "" # default: table reservation
+  #     # addOrderOnlineBtn: false
+  #     # orderOnlineBtnInsteadText: "See MENU & Order"
+  #     # addTableReservationBtn: false
+  #     # tableReservationBtnInsteadText: ""
+  #     # showOtherBtn: false
+  #     # btn1Text: "See MENU & Order" # default: order online
+  #     # btn1Href: "#" # default: order online
+  #     # btn2Text: "" # default: table reservation
+  #     # btn2Href: "" # default: table reservation
 
-#     # bannerImg: "sample.webp"
-#     # imgAlt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-#     # imgPosition: "imgLeft" # imgLeft | imgRight
-   
-#     # bottomRounded: "" # sm | md | lg | xl | 2xl | 3xl | full
+  #     # bannerImg: "sample.webp"
+  #     # imgAlt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  #     # imgPosition: "imgLeft" # imgLeft | imgRight
 
+  #     # bottomRounded: "" # sm | md | lg | xl | 2xl | 3xl | full
 
-# # feature - 3
-#   - type: "feature" 
-#     noMarginTop: true
-#     id: ""
-#     height: "100" # Conditionally use only when sectionType is imgBg
-#     sectionType: "imgWithText" # video | imgWithText | imgBg
-#     bgVideoType: "" # youtube | vimeo | gjw
-#     bgVideoId: ""
-#     bgImg: ""
-#     bgImgAlt: ""
-#     bgColor: ""
-#     bgOpacity: "" # 0~1
-#     title: 
-#       - "Committed to the Community"
-#     titleColor: "#000000"
-#     description: 
-#       - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-#     descriptionColor: "#000000"
+  # # feature - 3
+  #   - type: "feature"
+  #     noMarginTop: true
+  #     id: ""
+  #     height: "100" # Conditionally use only when sectionType is imgBg
+  #     sectionType: "imgWithText" # video | imgWithText | imgBg
+  #     bgVideoType: "" # youtube | vimeo | gjw
+  #     bgVideoId: ""
+  #     bgImg: ""
+  #     bgImgAlt: ""
+  #     bgColor: ""
+  #     bgOpacity: "" # 0~1
+  #     title:
+  #       - "Committed to the Community"
+  #     titleColor: "#000000"
+  #     description:
+  #       - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  #     descriptionColor: "#000000"
 
-#     addOrderOnlineBtn: false
-#     orderOnlineBtnInsteadText: "See MENU & Order"
-#     addTableReservationBtn: false
-#     tableReservationBtnInsteadText: ""
-#     showOtherBtn: false
-#     btn1Text: "See MENU & Order" # default: order online
-#     btn1Href: "#" # default: order online
-#     btn2Text: "" # default: table reservation
-#     btn2Href: "" # default: table reservation
+  #     addOrderOnlineBtn: false
+  #     orderOnlineBtnInsteadText: "See MENU & Order"
+  #     addTableReservationBtn: false
+  #     tableReservationBtnInsteadText: ""
+  #     showOtherBtn: false
+  #     btn1Text: "See MENU & Order" # default: order online
+  #     btn1Href: "#" # default: order online
+  #     btn2Text: "" # default: table reservation
+  #     btn2Href: "" # default: table reservation
 
-#     bannerImg: "sample.webp"
-#     imgAlt: "Lorem ipsum dolor sit amet"
-#     imgPosition: "imgRight" # imgLeft | imgRight
-   
-#     bottomRounded: "3xl" # sm | md | lg | xl | 2xl | 3xl | full
+  #     bannerImg: "sample.webp"
+  #     imgAlt: "Lorem ipsum dolor sit amet"
+  #     imgPosition: "imgRight" # imgLeft | imgRight
 
-# # textBlock 
-#   - type: "textBlock" 
-#     id: "about-us"
-#     bgImg: ""
-#     bgImgAlt: ""
-#     bgColor: ""
-#     bgOpacity: "" # 0~1
-#     title: 
-#       - "About Us"
-#     titleColor: "#000000"
-#     description: 
-#       - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-#       - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  #     bottomRounded: "3xl" # sm | md | lg | xl | 2xl | 3xl | full
 
-#       # - text: "We serve Imperial Soup dishes plus other Asian dishes. Feel free to message us about inquiries! We'll get back to you as soon as we can!"
-#     descriptionColor: "#000000"
-# # feature - 2
-#   - type: "feature" 
-#     id: "contact-us"
-#     noMarginTop: false
-#     height: "100" # Conditionally use only when sectionType is imgBg
-#     sectionType: "imgWithText" # video | imgWithText | imgBg
-#     bgVideoType: "" # youtube | vimeo | gjw
-#     bgVideoId: ""
-#     bgImg: ""
-#     bgImgAlt: ""
-#     bgColor: ""
-#     bgOpacity: "" # 0~1
-#     title: 
-#       - "Store 1: Kearny St"
-#     titleColor: "#000000"
-#     description: 
-#       - "Lorem ipsum dolor sit amet, consectetur"
-#     descriptionColor: "#000000"
-#     # title2: 
-#     #   - "A Corner of Tradition and Flavor"
-#     # title2Color: "#000000"
-#     # description2: 
-#     #   - "From the heart of Newark, CA, Crabby Crabby Restaurant is a corner where tradition meets flavor. Every corner of our restaurant is infused with authenticity, from the décor to every bite we serve."
-#     #   # - text: "We serve Imperial Soup dishes plus other Asian dishes. Feel free to message us about inquiries! We'll get back to you as soon as we can!"
-#     # description2Color: "#000000"
-#     # title2: 
-#     #   - "Committed to the Community"
-#     # title2Color: "#000000"
-#     # description2: 
-#     #   - "We are proud to be an active part of the Newark, CA community. Through special events, collaborations with local venues and participation in community initiatives, Crabby Crabby Restaurant seeks to strengthen the ties that bind us together."
-#     # description2Color: "#000000"
-#     isTextAlignCenter: false
+  # # textBlock
+  #   - type: "textBlock"
+  #     id: "about-us"
+  #     bgImg: ""
+  #     bgImgAlt: ""
+  #     bgColor: ""
+  #     bgOpacity: "" # 0~1
+  #     title:
+  #       - "About Us"
+  #     titleColor: "#000000"
+  #     description:
+  #       - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  #       - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
-#     addOrderOnlineBtn: false
-#     orderOnlineBtnInsteadText: "See MENU & Order"
-#     addTableReservationBtn: false
-#     tableReservationBtnInsteadText: ""
-#     showOtherBtn: true
-#     btn1Text: "Order online from Kearny St store" 
-#     btn1Href: "#" 
-#     btn2Text: "" 
-#     btn2Href: "" 
+  #       # - text: "We serve Imperial Soup dishes plus other Asian dishes. Feel free to message us about inquiries! We'll get back to you as soon as we can!"
+  #     descriptionColor: "#000000"
+  # # feature - 2
+  #   - type: "feature"
+  #     id: "contact-us"
+  #     noMarginTop: false
+  #     height: "100" # Conditionally use only when sectionType is imgBg
+  #     sectionType: "imgWithText" # video | imgWithText | imgBg
+  #     bgVideoType: "" # youtube | vimeo | gjw
+  #     bgVideoId: ""
+  #     bgImg: ""
+  #     bgImgAlt: ""
+  #     bgColor: ""
+  #     bgOpacity: "" # 0~1
+  #     title:
+  #       - "Store 1: Kearny St"
+  #     titleColor: "#000000"
+  #     description:
+  #       - "Lorem ipsum dolor sit amet, consectetur"
+  #     descriptionColor: "#000000"
+  #     # title2:
+  #     #   - "A Corner of Tradition and Flavor"
+  #     # title2Color: "#000000"
+  #     # description2:
+  #     #   - "From the heart of Newark, CA, Crabby Crabby Restaurant is a corner where tradition meets flavor. Every corner of our restaurant is infused with authenticity, from the décor to every bite we serve."
+  #     #   # - text: "We serve Imperial Soup dishes plus other Asian dishes. Feel free to message us about inquiries! We'll get back to you as soon as we can!"
+  #     # description2Color: "#000000"
+  #     # title2:
+  #     #   - "Committed to the Community"
+  #     # title2Color: "#000000"
+  #     # description2:
+  #     #   - "We are proud to be an active part of the Newark, CA community. Through special events, collaborations with local venues and participation in community initiatives, Crabby Crabby Restaurant seeks to strengthen the ties that bind us together."
+  #     # description2Color: "#000000"
+  #     isTextAlignCenter: false
 
-#     bannerImg: ""
-#     imgAlt: ""
-#     imgPosition: "" # imgLeft | imgRight
-    
-#     map: true
-#     url: "https://maps.app.goo.gl/nZ57LDJrofANer8J6"
-#     iframeUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d394.10234978168285!2d-122.4046165!3d37.7942861!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b1948e55b%3A0xcb3994bcd586810e!2sHon&#39;s%20Wun-Tun%20House!5e0!3m2!1sen!2sus!4v1722231832722!5m2!1sen!2sus"
-#     addTelBtn: true
-#     tel: "000000000"
-#     telInsteadText: "Call: (000) 000-0000"
-#     getDirectionBtnInsteadText: ""
-    
-    
-#     bottomRounded: "" # sm | md | lg | xl | 2xl | 3xl | full (only for background)
-# textBlock - Information
-  - type: "textBlock" 
+  #     addOrderOnlineBtn: false
+  #     orderOnlineBtnInsteadText: "See MENU & Order"
+  #     addTableReservationBtn: false
+  #     tableReservationBtnInsteadText: ""
+  #     showOtherBtn: true
+  #     btn1Text: "Order online from Kearny St store"
+  #     btn1Href: "#"
+  #     btn2Text: ""
+  #     btn2Href: ""
+
+  #     bannerImg: ""
+  #     imgAlt: ""
+  #     imgPosition: "" # imgLeft | imgRight
+
+  #     map: true
+  #     url: "https://maps.app.goo.gl/nZ57LDJrofANer8J6"
+  #     iframeUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d394.10234978168285!2d-122.4046165!3d37.7942861!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b1948e55b%3A0xcb3994bcd586810e!2sHon&#39;s%20Wun-Tun%20House!5e0!3m2!1sen!2sus!4v1722231832722!5m2!1sen!2sus"
+  #     addTelBtn: true
+  #     tel: "000000000"
+  #     telInsteadText: "Call: (000) 000-0000"
+  #     getDirectionBtnInsteadText: ""
+
+  #     bottomRounded: "" # sm | md | lg | xl | 2xl | 3xl | full (only for background)
+  # textBlock - Information
+  - type: "textBlock"
     noMarginTop: false
     id: ""
-    bgImg: "sweet_home_kitchen2.webp"
-    bgImgAlt: "aaa"
+    # bgImg: "sweet_home_kitchen2.webp"
+    # bgImgAlt: "aaa"
     bgColor: "#000"
-    bgOpacity: "0.6" # 0~1
-    title: 
+    bgOpacity: "1" # 0~1
+    title:
       - "NEW! Online Ordering"
     titleColor: "#ffffff"
-    description: 
+    description:
       - "Online ordering NOW enabled for pick-up. Just tell us what you want and we'll prepare it as fast as we can. All orders are manually confirmed by us directly. Find out in real-time when your food is ready. All orders are manually confirmed by us in real-time. Watch on-screen when your food is ready for pickup."
     descriptionColor: "#ffffff"
-  
-# map  
+
+  # map
   - type: "map"
     noMarginTop: true
     id: "contact-us"
@@ -346,16 +343,16 @@ sections:
     addTelBtn: true
     getDirectionBtnInsteadText: ""
     telInsteadText: ""
- 
- # The modal will only appear once within 30 minutes."
-  - type: "modal" 
+
+  # The modal will only appear once within 30 minutes."
+  - type: "modal"
     bgColor: "#333"
     bgOpacity: "0.1" # 0~1
-    title: 
+    title:
       - "🎁 Special Offers"
     titleColor: "#FF2D2F"
     titleSize: 24
-    description: 
+    description:
       - "20% off cash discount on frozen handmade dumplings. 10% off cash discount on family meal takeout. Free rice with lunch. Delivery available."
     descriptionColor: ""
     descriptionSize: 16
@@ -373,15 +370,15 @@ footer:
   bgOpacity: "0.7" # 0~1
   textColor: "#fff" # default white
   openingHoursInsteadText: ""
-  openingHours: 
+  openingHours:
     - "Monday"
     - "11:00 AM - 2:30 PM, 5:00 PM - 7:30 PM"
     - "Tuesday - Sunday"
     - "11:00 AM - 2:30 PM, 5:00 PM - 8:30 PM"
-  
+
   isLogo: false
   logoSize: 60
- 
+
   menu:
     - { text: "Home", link: "/" }
     - { text: "Gallery", link: "#gallery" }
@@ -402,13 +399,12 @@ footer:
 
   paymentMethod: "applePay,visa,amex,alipay,mastercard" # alipay,applePay,cash,discover,googlePay,jcb,maestro,mastercard,stripe,unionPay,visa,weChatPay,payPal
   addressInsteadText: ""
-  address: 
+  address:
     - address: "1312 Saratoga Ave, San Jose, CA 95129"
       url: "https://maps.app.goo.gl/Kqk8pwJxqrkELa2a9"
 
-
 seo:
-  metaTitle: "" 
+  metaTitle: ""
 
   metaDescription: "A Chinese restaurant located at 1312 Saratoga Ave, San Jose, CA, offers Jiangsu and Zhejiang dishes. We offer takeout and delivery."
 
@@ -425,10 +421,10 @@ seo:
   name: "Sweet Home Kitchen 家之味" # restaurant name
 
   images:
-    - "https://www.sweethomekitchensj.com/gallery/Shanghai Pork Ribs.webp"  # https://example.com/photos/1x1/photo.jpg
-    - "https://www.sweethomekitchensj.com/gallery/Shu Style Gold Pomfret.webp"  # https://example.com/photos/1x1/photo.jpg
-    - "https://www.sweethomekitchensj.com/gallery/SweetHome Kitchen 家之味5.webp"  # https://example.com/photos/1x1/photo.jpg
-    - 
+    - "https://www.sweethomekitchensj.com/gallery/Shanghai Pork Ribs.webp" # https://example.com/photos/1x1/photo.jpg
+    - "https://www.sweethomekitchensj.com/gallery/Shu Style Gold Pomfret.webp" # https://example.com/photos/1x1/photo.jpg
+    - "https://www.sweethomekitchensj.com/gallery/SweetHome Kitchen 家之味5.webp" # https://example.com/photos/1x1/photo.jpg
+    -
   address:
     streetAddress: "1312 Saratoga Ave" # 148 W 51st St
     addressLocality: "San Jose" # New York
@@ -436,12 +432,11 @@ seo:
     postalCode: "95129" # 10019
     addressCountry: "US" # US
 
-
   review:
     ratingValue: "4.6" #4.5
     bestRating: "5" # 5
     authorName: "Google Review" # Google Review
-    reviewType: "Organization" # Organization. Google Review ->"Organization", 
+    reviewType: "Organization" # Organization. Google Review ->"Organization",
 
   # review:
   #   ratingValue: "4.5"
@@ -455,7 +450,6 @@ seo:
   #   authorName: "John Doe"
   #   reviewType: "Person"
 
-
   geo:
     latitude: 37.30051526803661 # 40.761293
     longitude: -121.98031741934436 # -73.982294
@@ -466,33 +460,33 @@ seo:
   servesCuisine: ["Chinese", "Jiangsu and Zhejiang dishes"]
   priceRange: "$$" # $,$$,$$$,$$$$. $->Inexpensive, $$->Moderate, $$$->Expensive, $$$$->Luxury
   openingHours:
-  - dayOfWeek:
-      - "Monday"
-    opens: "11:00"
-    closes: "14:30"
-  - dayOfWeek:
-      - "Monday"
-    opens: "17:00"
-    closes: "19:30"
-  - dayOfWeek:
-      - "Tuesday"
-      - "Wednesday"
-      - "Thursday"
-      - "Friday"
-      - "Saturday"
-      - "Sunday"
-    opens: "11:00"
-    closes: "14:30"
-  - dayOfWeek:
-      - "Tuesday"
-      - "Wednesday"
-      - "Thursday"
-      - "Friday"
-      - "Saturday"
-      - "Sunday"
-    opens: "17:00"
-    closes: "20:30"
-   
+    - dayOfWeek:
+        - "Monday"
+      opens: "11:00"
+      closes: "14:30"
+    - dayOfWeek:
+        - "Monday"
+      opens: "17:00"
+      closes: "19:30"
+    - dayOfWeek:
+        - "Tuesday"
+        - "Wednesday"
+        - "Thursday"
+        - "Friday"
+        - "Saturday"
+        - "Sunday"
+      opens: "11:00"
+      closes: "14:30"
+    - dayOfWeek:
+        - "Tuesday"
+        - "Wednesday"
+        - "Thursday"
+        - "Friday"
+        - "Saturday"
+        - "Sunday"
+      opens: "17:00"
+      closes: "20:30"
+
   menu: "https://www.sweethomekitchensj.com/" # https://example.com/
   # acceptsReservations: true # true or false
   hasMenu: "https://www.sweethomekitchensj.com/" # https://crabbynewark.com/full-menu
@@ -547,7 +541,7 @@ seo:
           description: "Spicy poached fish fillet in Sichuan style."
           price: "17.95"
           image: ""
-        
+
   offers:
     - name: "20% off cash discount on frozen handmade dumplings"
       description: "Enjoy a 20% discount when you pay with cash for our frozen handmade dumplings."
@@ -569,6 +563,6 @@ seo:
       priceCurrency: "USD"
       price: "0"
       image: ""
-      
 ---
+
 <!-- hello world -->
