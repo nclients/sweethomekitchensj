@@ -1,4 +1,4 @@
----
+---    
 layout: "ssg-theme-astro/layouts/main.astro" # This line of code should remain unchanged.
 
 tag: "GTM-NHXRZ6W"
@@ -116,7 +116,7 @@ sections:
   # Gallery
   - type: "gallery"
     id: "gallery"
-    mode: 3 # 1 - 3
+    mode: 4 # 1 - 4
     bgImg: ""
     bgImgAlt: ""
     bgColor: ""
@@ -373,18 +373,18 @@ footer:
   openingHours:
     - "Monday"
     - "11:00 AM - 2:30 PM, 5:00 PM - 7:30 PM"
-    - "Tuesday - Sunday"
+    - "Tuesday ~ Sunday"
     - "11:00 AM - 2:30 PM, 5:00 PM - 8:30 PM"
 
   isLogo: false
   logoSize: 60
 
-  menu:
-    - { text: "Home", link: "/" }
-    - { text: "Gallery", link: "#gallery" }
-    - { text: "About Us", link: "/#about-us" }
-    - { text: "Contact Us", link: "/#contact-us" }
-    - { text: "中文", link: "/zh-cn" }
+  # menu:
+  #   - { text: "Home", link: "/" }
+  #   - { text: "Gallery", link: "#gallery" }
+  #   - { text: "About Us", link: "/#about-us" }
+  #   - { text: "Contact Us", link: "/#contact-us" }
+  #   - { text: "中文", link: "/zh-cn" }
 
   FB: false
   FBLink: ""

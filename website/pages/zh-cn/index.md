@@ -105,7 +105,7 @@ sections:
   # Gallery
   - type: "gallery"
     id: "gallery"
-    mode: 3 # 1 - 3
+    mode: 4 # 1 - 4
     bgImg: ""
     bgImgAlt: ""
     bgColor: ""
@@ -368,12 +368,12 @@ footer:
   isLogo: false
   logoSize: 60
 
-  menu:
-    - { text: "首頁", link: "/zh-cn" }
-    - { text: "菜品展示", link: "/zh-cn#gallery" }
-    - { text: "關於我們", link: "/zh-cn#about-us" }
-    - { text: "聯繫我們", link: "/zh-cn#contact-us" }
-    - { text: "English", link: "/" }
+  # menu:
+  #   - { text: "首頁", link: "/zh-cn" }
+  #   - { text: "菜品展示", link: "/zh-cn#gallery" }
+  #   - { text: "關於我們", link: "/zh-cn#about-us" }
+  #   - { text: "聯繫我們", link: "/zh-cn#contact-us" }
+  #   - { text: "English", link: "/" }
 
   FB: false
   FBLink: ""

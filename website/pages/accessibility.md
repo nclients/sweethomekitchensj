@@ -15,6 +15,7 @@ orderOnlineLink: "https://www.bestfoodtodayus.com/ordering/?restaurant_uid=456b4
 tableReservationLink: ""
 tel: "408-689-7799"
 address: 1312 Saratoga Ave, San Jose, CA 95129
+creationDate: 1 Jan 2025
 
 banner:
   text:
@@ -85,12 +86,12 @@ footer:
   isLogo: false
   logoSize: 60
 
-  menu:
-    - { text: "Home", link: "/" }
-    - { text: "Gallery", link: "/#gallery" }
-    - { text: "About Us", link: "/#about-us" }
-    - { text: "Contact Us", link: "/#contact-us" }
-    - { text: "中文", link: "/zh-cn" }
+  # menu:
+  #   - { text: "Home", link: "/" }
+  #   - { text: "Gallery", link: "/#gallery" }
+  #   - { text: "About Us", link: "/#about-us" }
+  #   - { text: "Contact Us", link: "/#contact-us" }
+  #   - { text: "中文", link: "/zh-cn" }
 
   FB: false
   FBLink: ""
