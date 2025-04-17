@@ -65,9 +65,9 @@ sections:
   - type: "hero"
     id: ""
     height: "100" # Conditionally use only when sectionType is imgBg
-    sectionType: "imgBg" # video | imgWithText | imgBg
+    sectionType: "video" # video | imgWithText | imgBg
     bgVideoType: "gjw" # youtube | vimeo | gjw
-    bgVideoId: ""
+    bgVideoId: "1g0587kl1ea1x6LvGo9M2K9tB10d1c"
     bgImg: "background.webp"
     bgImgAlt: "Sweet Home Kitchen 家之味 - Best Food Today"
     isTextAlignCenter: true
