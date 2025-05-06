@@ -99,7 +99,7 @@ sections:
     videoType: "gjw" # vimeo | gjw | youtube
     videoId:
       - "1g5723hgukt5FVmEKhN2CDfAg16k1c"
-      - "1gtkmtam2me6f0kfsaJV9gcfE12s1c"
+      - "1hio8rdma893MrvZHTChEustJ14e1c"
     isOnlyDisplayOnMobile: false
 
   # Gallery
