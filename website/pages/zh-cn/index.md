@@ -10,7 +10,7 @@ primaryColorScheme: "dark" # dark | light
 secondaryColorScheme: "light"
 dataGlfCuid: ""
 dataGlfRuid: ""
-orderOnlineLink: "https://www.bestfoodtodayus.com/ordering/?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
+orderOnlineLink: "https://www.bestfoodtodayus.com/ordering/restaurant/menu?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
 tableReservationLink: ""
 tel: "408-689-7799"
 
@@ -47,7 +47,7 @@ header:
   telTextColor: "#000000"
   addOtherBtn: true
   otherBtnInsteadText: "在線訂餐"
-  otherBtnHref: "https://www.bestfoodtodayus.com/ordering/?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
+  otherBtnHref: "https://www.bestfoodtodayus.com/ordering/restaurant/menu?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
 
 sections:
   # hero
@@ -76,7 +76,7 @@ sections:
     tableReservationBtnInsteadText: ""
     showOtherBtn: true
     btn1Text: "查看菜單 / 在線訂餐" # default: order online
-    btn1Href: "https://www.bestfoodtodayus.com/ordering/?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3" # default: order online
+    btn1Href: "https://www.bestfoodtodayus.com/ordering/restaurant/menu?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3" # default: order online
     btn2Text: "" # default: table reservation
     btn2Href: "" # default: table reservation
 
@@ -347,7 +347,7 @@ sections:
     descriptionSize: 16
     imgName: "special_offer2.webp"
     imgAlt: "冷凍手工水餃現金８折優惠。 家庭套餐外賣現金９折優惠，午餐米飯免費。家庭套餐任選3道菜$40，米飯免費。"
-    imgHref: "https://www.bestfoodtodayus.com/ordering/?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
+    imgHref: "https://www.bestfoodtodayus.com/ordering/restaurant/menu?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
     buttonText: ""
 
 footer:

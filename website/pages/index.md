@@ -11,7 +11,7 @@ primaryColorScheme: "dark" # dark | light
 secondaryColorScheme: "light"
 dataGlfCuid: ""
 dataGlfRuid: ""
-orderOnlineLink: "https://www.bestfoodtodayus.com/ordering/?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
+orderOnlineLink: "https://www.bestfoodtodayus.com/ordering/restaurant/menu?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
 tableReservationLink: ""
 tel: "408-689-7799"
 
@@ -58,7 +58,7 @@ header:
   telTextColor: "#000000"
   addOtherBtn: true
   otherBtnInsteadText: "See MENU & Order"
-  otherBtnHref: "https://www.bestfoodtodayus.com/ordering/?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
+  otherBtnHref: "https://www.bestfoodtodayus.com/ordering/restaurant/menu?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
 
 sections:
   # hero
@@ -87,7 +87,7 @@ sections:
     tableReservationBtnInsteadText: ""
     showOtherBtn: true
     btn1Text: "See MENU & Order" # default: order online
-    btn1Href: "https://www.bestfoodtodayus.com/ordering/?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3" # default: order online
+    btn1Href: "https://www.bestfoodtodayus.com/ordering/restaurant/menu?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3" # default: order online
     btn2Text: "" # default: table reservation
     btn2Href: "" # default: table reservation
 
@@ -358,7 +358,7 @@ sections:
     descriptionSize: 16
     imgName: "special_offer2.webp"
     imgAlt: "20% off cash discount on frozen handmade dumplings. 10% off cash discount on family meal takeout. Free rice with lunch. Delivery available."
-    imgHref: "https://www.bestfoodtodayus.com/ordering/?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
+    imgHref: "https://www.bestfoodtodayus.com/ordering/restaurant/menu?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
     buttonText: ""
 
 footer:

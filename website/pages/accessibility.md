@@ -11,7 +11,7 @@ primaryColorScheme: "dark" # dark | light
 secondaryColorScheme: "light"
 dataGlfCuid: ""
 dataGlfRuid: ""
-orderOnlineLink: "https://www.bestfoodtodayus.com/ordering/?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
+orderOnlineLink: "https://www.bestfoodtodayus.com/ordering/restaurant/menu?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
 tableReservationLink: ""
 tel: "408-689-7799"
 address: 1312 Saratoga Ave, San Jose, CA 95129
@@ -60,7 +60,7 @@ header:
   telTextColor: "#000000"
   addOtherBtn: true
   otherBtnInsteadText: "See MENU & Order"
-  otherBtnHref: "https://www.bestfoodtodayus.com/ordering/?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
+  otherBtnHref: "https://www.bestfoodtodayus.com/ordering/restaurant/menu?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
 
 sections:
   # hero
