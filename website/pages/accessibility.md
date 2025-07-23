@@ -11,30 +11,30 @@ primaryColorScheme: "dark" # dark | light
 secondaryColorScheme: "light"
 dataGlfCuid: ""
 dataGlfRuid: ""
-orderOnlineLink: "https://www.bestfoodtodayus.com/ordering/restaurant/menu?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
+orderOnlineLink: ""
 tableReservationLink: ""
 tel: "408-689-7799"
 address: 1312 Saratoga Ave, San Jose, CA 95129
 creationDate: 1 Jan 2025
 
-banner:
-  text:
-    # - boldText: "🥳 Special Offer"
-    - boldText: "20% off cash discount"
-    - text: " on frozen handmade dumplings."
-    - boldText: "10% off cash discount"
-    - text: " on family meal takeout."
-    - boldText: "Family Set:"
-    - text: " Any 3 dishes for $40, includes free rice."
-    - boldText: "Free rice"
-    - text: " with lunch."
-    - boldText: "Delivery and takeout "
-    - text: "available."
+# banner:
+#   text:
+#     # - boldText: "🥳 Special Offer"
+#     - boldText: "20% off cash discount"
+#     - text: " on frozen handmade dumplings."
+#     - boldText: "10% off cash discount"
+#     - text: " on family meal takeout."
+#     - boldText: "Family Set:"
+#     - text: " Any 3 dishes for $40, includes free rice."
+#     - boldText: "Free rice"
+#     - text: " with lunch."
+#     - boldText: "Delivery and takeout "
+#     - text: "available."
 
-  # add more text...
-  textColor: "#ffffff"
-  bgColor: "#E7383D"
-  bgOpacity: "1" # 0~1
+#   # add more text...
+#   textColor: "#ffffff"
+#   bgColor: "#E7383D"
+#   bgOpacity: "1" # 0~1
 
 # header
 header:
@@ -59,8 +59,8 @@ header:
   addTelBtn: true
   telTextColor: "#000000"
   addOtherBtn: true
-  otherBtnInsteadText: "See MENU & Order"
-  otherBtnHref: "https://www.bestfoodtodayus.com/ordering/restaurant/menu?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
+  otherBtnInsteadText: "Get Direction"
+  otherBtnHref: "https://maps.app.goo.gl/6wtdZhCK2oE3hFaw8"
 
 sections:
   # hero
