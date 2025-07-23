@@ -28,8 +28,8 @@ banner:
     - text: " Any 3 dishes for $40, includes free rice."
     - boldText: "Free rice"
     - text: " with lunch."
-    - boldText: "Delivery and takeout "
-    - text: "available."
+    - boldText: ""
+    - text: ""
 
   # add more text...
   textColor: "#ffffff"

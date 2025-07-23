@@ -17,7 +17,7 @@ tel: "408-689-7799"
 banner:
   text:
     - boldText: "🥳 Special Offer"
-    - boldText: "手工水餃現金８折優惠。家庭套餐外賣現金９折優惠，午餐米飯免費。家庭套餐選擇3道菜$40，米飯免費。提供自取和送餐服務。"
+    - boldText: "手工水餃現金８折優惠。家庭套餐外賣現金９折優惠，午餐米飯免費。家庭套餐選擇3道菜$40，米飯免費。"
   # add more text...
   textColor: "#ffffff"
   bgColor: "#E7383D"
@@ -342,7 +342,7 @@ sections:
     titleColor: "#FF2D2F"
     titleSize: 24
     description:
-      - "冷凍手工水餃現金８折優惠。 家庭套餐外賣現金９折優惠，午餐米飯免費。家庭套餐任選3道菜$40，米飯免費。提供自取和送餐服務。"
+      - "冷凍手工水餃現金８折優惠。 家庭套餐外賣現金９折優惠，午餐米飯免費。家庭套餐任選3道菜$40，米飯免費。"
     descriptionColor: ""
     descriptionSize: 16
     imgName: "special_offer2.webp"

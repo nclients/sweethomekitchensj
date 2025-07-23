@@ -26,8 +26,8 @@ banner:
     - text: " Any 3 dishes for $40, includes free rice."
     - boldText: "Free rice"
     - text: " with lunch."
-    - boldText: "Delivery and takeout "
-    - text: "available."
+    - boldText: ""
+    - text: ""
 
 #   # add more text...
 #   textColor: "#ffffff"
@@ -353,7 +353,7 @@ sections:
     titleColor: "#FF2D2F"
     titleSize: 24
     description:
-      - "20% off cash discount on frozen handmade dumplings. 10% off cash discount on family meal takeout. Free rice with lunch. Delivery available."
+      - "20% off cash discount on frozen handmade dumplings. 10% off cash discount on family meal takeout. Free rice with lunch."
     descriptionColor: ""
     descriptionSize: 16
     imgName: "special_offer2.webp"
