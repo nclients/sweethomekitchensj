@@ -17,24 +17,24 @@ tel: "408-689-7799"
 address: 1312 Saratoga Ave, San Jose, CA 95129
 creationDate: 1 Jan 2025
 
-# banner:
-#   text:
-#     # - boldText: "🥳 Special Offer"
-#     - boldText: "20% off cash discount"
-#     - text: " on frozen handmade dumplings."
-#     - boldText: "10% off cash discount"
-#     - text: " on family meal takeout."
-#     - boldText: "Family Set:"
-#     - text: " Any 3 dishes for $40, includes free rice."
-#     - boldText: "Free rice"
-#     - text: " with lunch."
-#     - boldText: "Delivery and takeout "
-#     - text: "available."
+banner:
+  text:
+    # - boldText: "🥳 Special Offer"
+    - boldText: "20% off cash discount"
+    - text: " on frozen handmade dumplings."
+    - boldText: "10% off cash discount"
+    - text: " on family meal takeout."
+    - boldText: "Family Set:"
+    - text: " Any 3 dishes for $40, includes free rice."
+    - boldText: "Free rice"
+    - text: " with lunch."
+    - boldText: "Delivery and takeout "
+    - text: "available."
 
-#   # add more text...
-#   textColor: "#ffffff"
-#   bgColor: "#E7383D"
-#   bgOpacity: "1" # 0~1
+  # add more text...
+  textColor: "#ffffff"
+  bgColor: "#E7383D"
+  bgOpacity: "1" # 0~1
 
 # header
 header:
