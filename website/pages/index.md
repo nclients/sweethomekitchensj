@@ -67,7 +67,7 @@ sections:
     height: "100" # Conditionally use only when sectionType is imgBg
     sectionType: "video" # video | imgWithText | imgBg
     bgVideoType: "gjw" # youtube | vimeo | gjw
-    bgVideoId: "1g0587kl1ea1x6LvGo9M2K9tB10d1c"
+    bgVideoId: "1i4giqrriahH3ncjbOByJU7Lc1no1c"
     bgImg: "background.webp"
     bgImgAlt: "Sweet Home Kitchen 家之味 - Best Food Today"
     isTextAlignCenter: true
@@ -109,8 +109,9 @@ sections:
       - "Dive into a diverse array of dishes at Sweet Home Kitchen, where Jiangsu and Zhejiang  cuisine meets classic Chinese flavors."
     videoType: "gjw" # vimeo | gjw | youtube
     videoId:
+      - "1i4giqrriahH3ncjbOByJU7Lc1no1c"
       - "1g5723hgukt5FVmEKhN2CDfAg16k1c"
-      - "1hio8rdma893MrvZHTChEustJ14e1c"
+      
     isOnlyDisplayOnMobile: false
 
   # Gallery
