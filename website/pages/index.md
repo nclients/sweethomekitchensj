@@ -68,7 +68,7 @@ sections:
     sectionType: "video" # video | imgWithText | imgBg
     bgVideoType: "gjw" # youtube | vimeo | gjw
     bgVideoId: "1i4giqrriahH3ncjbOByJU7Lc1no1c"
-    bgImg: "background.webp"
+    bgImg: "background.jpg"
     bgImgAlt: "Sweet Home Kitchen 家之味 - Best Food Today"
     isTextAlignCenter: true
     bgColor: "#000000"
@@ -91,7 +91,7 @@ sections:
     btn2Text: "" # default: table reservation
     btn2Href: "" # default: table reservation
 
-    bannerImg: "sweet_home_kitchen.webp"
+    bannerImg: ""
     imgAlt: "Sweet Home Kitchen 家之味 - Best Food Today"
     imgPosition: "imgLeft" # imgLeft | imgRight
     bannerMarginTopMobile: 32
