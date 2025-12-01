@@ -358,7 +358,7 @@ sections:
       - "20% off cash discount on frozen handmade dumplings. 10% off cash discount on family meal takeout. Free rice with lunch."
     descriptionColor: ""
     descriptionSize: 16
-    imgName: "special_offer2.webp"
+    imgName: "special_offer2.png"
     imgAlt: "20% off cash discount on frozen handmade dumplings. 10% off cash discount on family meal takeout. Free rice with lunch. Delivery available."
     imgHref: "https://www.bestfoodtodayus.com/ordering/restaurant/menu?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
     buttonText: ""
