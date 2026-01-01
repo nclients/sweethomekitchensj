@@ -68,7 +68,7 @@ sections:
     sectionType: "video" # video | imgWithText | imgBg
     bgVideoType: "gjw" # youtube | vimeo | gjw
     bgVideoId: "1i4giqrriahH3ncjbOByJU7Lc1no1c"
-    bgImg: "background1.jpg"
+    bgImg: "background3.jpg"
     bgImgAlt: "Sweet Home Kitchen 家之味 - Best Food Today"
     isTextAlignCenter: true
     bgColor: "#000000"
