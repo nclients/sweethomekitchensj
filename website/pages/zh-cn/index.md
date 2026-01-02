@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: "ssg-theme-astro/layouts/main.astro" #Don't touch this line of code.
 tag: "GTM-NHXRZ6W"
 title: "Sweet Home Kitchen 家之味 - Best Food Today"
@@ -57,7 +57,7 @@ sections:
     sectionType: "video" # video | imgWithText | imgBg
     bgVideoType: "gjw" # youtube | vimeo | gjw
     bgVideoId: "1g0587kl1ea1x6LvGo9M2K9tB10d1c"
-    bgImg: "background.webp"
+    bgImg: "background3.webp"
     bgImgAlt: "Sweet Home Kitchen 家之味 - Best Food Today"
     bgColor: "#000000"
     bgOpacity: "0.2" # 0~1
@@ -403,4 +403,4 @@ seo:
   canonicalHref: "https://www.sweethomekitchensj.com/zh-cn/"
 ---
 
-hello world
+hello world -->
