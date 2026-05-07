@@ -1,0 +1,71 @@
+---
+import PrimaryButton from "./ui/PrimaryButton.astro";
+import SecondaryButton from "./ui/SecondaryButton.astro";
+import { cn } from "../utils/cn";
+
+const { content, section, isChildComponent } = Astro.props;
+---
+
+<section
+  class={cn(
+    "relative",
+    isChildComponent || section?.noMarginTop
+      ? "mt-0"
+      : "mt-16 sm:mt-24 md:mt-32",
+    isChildComponent ? "" : "scroll-mt-50 sm:scroll-mt-100"
+  )}
+  id={section?.id || ""}
+>
+  <div class="absolute top-4 right-4">
+    <div class="flex flex-col gap-4">
+      <PrimaryButton
+        content={content}
+        text={section?.getDirectionBtnInsteadText
+          ? section?.getDirectionBtnInsteadText
+          : `Get Direction`}
+        href={`${section?.url}`}
+      />
+      {
+        section?.addTelBtn ? (
+          <SecondaryButton
+            content={content}
+            text={
+              section?.telInsteadText
+                ? section?.telInsteadText
+                : `Tel: ${content?.tel}`
+            }
+            href={`tel:${content?.tel ? content?.tel : section?.tel}`}
+            id="mapTelBtn"
+          />
+        ) : (
+          ""
+        )
+      }
+      {
+        section?.addTelBtn && section?.tel2 ? (
+          <SecondaryButton
+            content={content}
+            text={
+              section?.tel2InsteadText
+                ? section?.tel2InsteadText
+                : `tel: ${content?.tel2}`
+            }
+            href={`tel:${section?.tel2}`}
+            id="mapTelBtn2"
+          />
+        ) : (
+          ""
+        )
+      }
+    </div>
+  </div>
+  <iframe
+    src={`${section?.iframeUrl}`}
+    class="w-full"
+    aria-hidden="true"
+    allowfullscreen=""
+    loading="lazy"
+    height="500"
+    referrerpolicy="no-referrer-when-downgrade"
+    title={`Google Map for ${content?.title}`}></iframe>
+</section>

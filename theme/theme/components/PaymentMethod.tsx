@@ -1,0 +1,193 @@
+export default function PaymentMethod(props: { content: any; acceptedPaymentMethodsInsteadText: any; }){
+  const { content, acceptedPaymentMethodsInsteadText } = props;
+
+  return(
+    <>
+    
+<div className="pb-10 leading-8">
+  <div
+    className="font-semibold pb-4"
+    style={{
+      color: content?.footer?.textColor || '#ffffff',
+    }}        
+  >
+    {
+      acceptedPaymentMethodsInsteadText
+        ? acceptedPaymentMethodsInsteadText
+        : "Accepted Payment Methods"
+    }
+  </div>
+  <div className="flex justify-center items-center gap-4">
+    {/* <!-- 0.AMEX --> */}
+    {
+      content?.footer?.paymentMethod?.includes("amex") && (
+        <img
+          src={`/paymentMethods/amex.svg`}
+          className="w-12"
+          alt="American Express logo"
+          loading="lazy"
+        />
+      )
+    }
+    {/* <!-- 1.aliPay --> */}
+    {
+      content?.footer?.paymentMethod?.includes("aliPay") && (
+        <img
+          src={`/paymentMethods/aliPay.svg`}
+          className="w-12"
+          alt="AliPay logo"
+          loading="lazy"
+        />
+      )
+    }
+
+    {/* <!-- 2.applePay --> */}
+    {
+      content?.footer?.paymentMethod?.includes("applePay") && (
+        <img
+          src={`/paymentMethods/applePay.svg`}
+          className="w-12"
+          alt="applePay logo"
+          loading="lazy"
+        />
+      )
+    }
+
+    {/* <!-- 3.cash --> */}
+    {
+      content?.footer?.paymentMethod?.includes("cash") && (
+        <img
+          src={`/paymentMethods/cash.png`}
+          className="w-12"
+          alt="Cash payment logo"
+          loading="lazy"
+        />
+      )
+    }
+
+    {/* <!-- 4.discover --> */}
+    {
+      content?.footer?.paymentMethod?.includes("discover") && (
+        <img
+          src={`/paymentMethods/discover.svg`}
+          className="w-12"
+          alt="Discover Card logo"
+          loading="lazy"
+        />
+      )
+    }
+
+    {/* <!-- 5.googlePay --> */}
+    {
+      content?.footer?.paymentMethod?.includes("googlePay") && (
+        <img
+          src={`/paymentMethods/googlePay.svg`}
+          className="w-12"
+          alt="Google Pay logo"
+          loading="lazy"
+        />
+      )
+    }
+
+    {/* <!-- 6.jcb --> */}
+    {
+      content?.footer?.paymentMethod?.includes("jcb") && (
+        <img
+          src={`/paymentMethods/jcb.svg`}
+          className="w-12"
+          alt="JCB logo"
+          loading="lazy"
+        />
+      )
+    }
+
+    {/* <!-- 7.maestro --> */}
+    {
+      content?.footer?.paymentMethod?.includes("maestro") && (
+        <img
+          src={`/paymentMethods/maestro.svg`}
+          className="w-12"
+          alt="Maestro logo"
+          loading="lazy"
+        />
+      )
+    }
+
+    {/* <!-- 8.mastercard --> */}
+    {
+      content?.footer?.paymentMethod?.includes("mastercard") && (
+        <img
+          src={`/paymentMethods/mastercard.svg`}
+          className="w-12"
+          alt="MasterCard logo"
+          loading="lazy"
+        />
+      )
+    }
+
+    {/* <!-- 9.payPal --> */}
+    {
+      content?.footer?.paymentMethod?.includes("payPal") && (
+        <img
+          src={`/paymentMethods/payPal.svg`}
+          className="w-12"
+          alt="PayPal logo"
+          loading="lazy"
+        />
+      )
+    }
+
+    {/* <!-- 10.stripe --> */}
+    {
+      content?.footer?.paymentMethod?.includes("stripe") && (
+        <img
+          src={`/paymentMethods/stripe.svg`}
+          className="w-12"
+          alt="Stripe logo"
+          loading="lazy"
+        />
+      )
+    }
+
+    {/* <!-- 11.unionPay --> */}
+    {
+      content?.footer?.paymentMethod?.includes("unionPay") && (
+        <img
+          src={`/paymentMethods/unionPay.svg`}
+          className="w-12"
+          alt="UnionPay logo"
+          loading="lazy"
+        />
+      )
+    }
+
+    {/* <!-- 12.visa --> */}
+    {
+      content?.footer?.paymentMethod?.includes("visa") && (
+        <img
+          src={`/paymentMethods/visa.svg`}
+          className="w-12"
+          alt="Visa logo"
+          loading="lazy"
+        />
+      )
+    }
+
+    {/* <!-- 13.weChatPay --> */}
+    {
+      content?.footer?.paymentMethod?.includes("weChatPay") && (
+        <img
+          src={`/paymentMethods/weChatPay.svg`}
+          className="w-12"
+          alt="WeChat Pay logo"
+          loading="lazy"
+        />
+      )
+    }
+  </div>
+</div>
+    </>
+  )
+}
+
+

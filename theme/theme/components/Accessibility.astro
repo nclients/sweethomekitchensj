@@ -1,0 +1,65 @@
+---
+const { content } = Astro.props;
+---
+
+<div class="bg-white py-12">
+  <div class="mx-auto max-w-6xl lg:px-8">
+    <div class="bg-white px-6 py-16 sm:py-32 lg:px-8">
+      <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+        <h1
+          class="mt-2 text-3xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl"
+        >
+          Accessibility Statement
+        </h1>
+        <!-- 1 -->
+        <p class="mt-6">
+          We are dedicated to ensuring equal access to goods and services for
+          all individuals. As part of this commitment, we continuously work to
+          enhance the accessibility of our website and apps, making them more
+          user-friendly for people with disabilities and everyone else.
+        </p>
+        <!-- 2 -->
+        <h2 class="mt-6 font-bold">Conformance status</h2>
+        <p class="mt-6">
+          The <a href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+            >Web Content Accessibility Guidelines (WCAG)</a
+          > defines requirements for designers and developers to improve accessibility
+          for people with disabilities. It defines three levels of conformance: Level
+          A, Level AA, and Level AAA. Our Website is partially conformant with WCAG
+          2.1 level AA. Partially conformant means that some parts of the content
+          do not fully conform to the accessibility standard.
+        </p>
+        <!-- 3 -->
+        <h2 class="mt-6 font-bold">Feedback</h2>
+
+        <p class="mt-6">
+          Your feedback regarding the accessibility of our services is highly
+          valued. If you encounter any accessibility barriers while using our
+          website or apps, please don't hesitate to let us know. We deeply
+          appreciate your insights as we endeavor to create an inclusive
+          experience for all users.
+        </p>
+
+        <div class="mt-6">
+          <p class="mt-2">{content?.title}</p>
+          {content?.tel && <p class="mt-2">{"Phone: " + content.tel}</p>}
+          {content?.email && <p class="mt-2">{"Email: " + content.email}</p>}
+          {
+            content?.address && (
+              <p class="mt-2">{"Postal address: " + content.address}</p>
+            )
+          }
+          <p class="mt-6">
+            We try to respond to feedback within 5 business days.
+          </p>
+          <p class="mt-6">
+            {
+              content?.creationDate &&
+                "This statement was created on " + content?.creationDate + "."
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

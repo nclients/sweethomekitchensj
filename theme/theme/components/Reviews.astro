@@ -1,0 +1,345 @@
+---
+import { cn } from "../utils/cn";
+
+type TestimonialsData = {
+  author: { handle: string; imageUrl: string | null | undefined; name: string };
+  rating: { maxStars: number; rating: number };
+  body: string;
+};
+const { section } = Astro.props;
+const isCarousel = section?.carousel === true;
+
+const colors = [
+  "bg-red-700", "bg-blue-700", "bg-green-700", "bg-yellow-700",
+  "bg-purple-700", "bg-pink-700", "bg-orange-700", "bg-teal-700",
+  "bg-indigo-700", "bg-lime-700", "bg-cyan-700", "bg-amber-700",
+  "bg-rose-700", "bg-fuchsia-700", "bg-emerald-700", "bg-sky-700",
+  "bg-violet-700", "bg-stone-700", "bg-gray-700", "bg-zinc-700",
+];
+
+const getColor = (name: string) => {
+  const hash = name.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
+  return colors[hash % colors.length];
+};
+
+const getInitial = (name: string) => name ? name.charAt(0).toUpperCase() : "?";
+---
+
+<section
+  id={`${section?.id || ""}`}
+  class={cn(section?.noMarginTop ? "pt-0" : "pt-16 sm:pt-24 md:pt-32")}
+>
+  <div style={`background-color:${section?.bgColor}`}>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">
+          {section?.title?.map((line: string, index: number) => (
+            <Fragment key={index}><span class="block leading-tight">{line}</span></Fragment>
+          ))}
+        </h2>
+        {section?.description?.map((info: string, index: number) => (
+          <Fragment key={index}>
+            <p class="mt-4 text-lg leading-8 text-gray-600">{info}</p>
+          </Fragment>
+        ))}
+      </div>
+
+      {isCarousel ? (
+        <div class="reviews-carousel relative mt-10" data-carousel>
+
+          {/* Left arrow */}
+          <button
+            class="prev-btn absolute left-0 top-1/2 -translate-y-8 z-10 w-9 h-9 rounded-full bg-white shadow-md border border-gray-200 flex items-center justify-center text-gray-500 hover:text-gray-800 hover:shadow-lg transition-all"
+            aria-label="Previous review"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+
+          {/* Track */}
+          <div class="overflow-hidden mx-10 md:mx-12">
+            <div class="reviews-carousel-track flex" style="transition: transform 0.5s ease-in-out;">
+              {section?.items?.map((testimonial: TestimonialsData) => (
+                <div class="reviews-carousel-slide flex-shrink-0 px-3">
+                  <figure class="rounded-2xl bg-white border border-gray-100 shadow-sm p-6 flex flex-col h-full">
+
+                    {/* Stars */}
+                    {testimonial?.rating?.rating && (
+                      <div class="flex items-center gap-0.5 mb-4" role="img" aria-label={`${testimonial.rating.rating} out of ${testimonial.rating.maxStars || 5} stars`}>
+                        {Array.from({ length: testimonial?.rating?.maxStars || 5 }, (_, i) => (
+                          <svg
+                            class={cn(i < testimonial.rating.rating ? "text-yellow-400" : "text-gray-200", "w-5 h-5 shrink-0")}
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                          >
+                            <path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"/>
+                          </svg>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* Quote */}
+                    {testimonial?.body && (
+                      <blockquote class="text-gray-700 text-base leading-relaxed flex-1">
+                        <p>"{testimonial?.body}"</p>
+                      </blockquote>
+                    )}
+
+                    {/* Divider */}
+                    <hr class="my-5 border-gray-200" />
+
+                    {/* Author */}
+                    <div class="flex items-center gap-3">
+                      <div class={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${getColor(testimonial?.author?.name || "")}`}>
+                        <span class="text-white text-base font-bold">{getInitial(testimonial?.author?.name)}</span>
+                      </div>
+                      {testimonial?.author?.name && (
+                        <span class="font-semibold text-gray-900">{testimonial?.author?.name}</span>
+                      )}
+                    </div>
+
+                  </figure>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right arrow */}
+          <button
+            class="next-btn absolute right-0 top-1/2 -translate-y-8 z-10 w-9 h-9 rounded-full bg-white shadow-md border border-gray-200 flex items-center justify-center text-gray-500 hover:text-gray-800 hover:shadow-lg transition-all"
+            aria-label="Next review"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+
+          {/* Dots */}
+          <div class="reviews-carousel-dots flex justify-center gap-3 mt-8">
+            {section?.items?.map((_: TestimonialsData, i: number) => (
+              <button
+                class={cn("w-2.5 h-2.5 rounded-full transition-colors duration-200", i === 0 ? "bg-gray-700" : "bg-gray-300")}
+                aria-label={`Go to review ${i + 1}`}
+                data-index={i}
+              />
+            ))}
+          </div>
+
+        </div>
+      ) : (
+        <div class="mx-auto max-w-7xl px-2 lg:px-8 md:columns-3">
+          {section?.items?.map((testimonial: TestimonialsData) => (
+            <Fragment key={testimonial?.body}>
+              <div class={cn("pt-8 sm:inline-block sm:w-full sm:px-4", section?.classes?.body)}>
+                <figure class="rounded-2xl bg-gray-50 p-4 sm:p-8 text-lg/6">
+                  {testimonial?.body && (
+                    <blockquote class="text-gray-900"><p>{`"${testimonial?.body}"`}</p></blockquote>
+                  )}
+                  <div class="mt-6 flex items-center gap-x-4">
+                    <div class={`size-10 rounded-full flex items-center justify-center ${getColor(testimonial?.author?.name || "")}`}>
+                      <span class="text-white text-lg font-bold">{getInitial(testimonial?.author?.name)}</span>
+                    </div>
+                    <div>
+                      {testimonial?.author?.name && (
+                        <div class="font-semibold text-gray-900">{testimonial?.author?.name}</div>
+                      )}
+                      {testimonial?.author?.handle && (
+                        <div class="text-gray-600">{`@${testimonial?.author?.handle}`}</div>
+                      )}
+                      {testimonial?.rating?.rating && (
+                        <div role="img" aria-label={`${testimonial.rating.rating} out of ${testimonial.rating.maxStars || 5} stars`}>
+                          <div class="flex items-center mt-1">
+                            {Array.from({ length: testimonial?.rating?.maxStars || 5 }, (_, index) => (
+                              <Fragment key={index}>
+                                <svg
+                                  class={cn(index < testimonial.rating.rating ? "text-yellow-400" : "text-gray-300", "size-4.5 shrink-0")}
+                                  aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                  width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                >
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                  <path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"/>
+                                </svg>
+                              </Fragment>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </figure>
+              </div>
+            </Fragment>
+          ))}
+        </div>
+      )}
+
+    </div>
+  </div>
+
+  {section?.buttonText && (
+    <div class="text-center mt-8 pb-4">
+      <a
+        href={section?.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block rounded-md px-6 py-3 text-base font-semibold text-white shadow-sm hover:scale-105 transition-transform"
+        style={`background-color:${section?.buttonBgColor || "#E7383D"}`}
+      >
+        {section?.buttonText}
+      </a>
+    </div>
+  )}
+</section>
+
+<style>
+  .reviews-carousel-track {
+    width: 100%;
+  }
+  /* Mobile: 1 card at a time */
+  .reviews-carousel-slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /* Desktop: 3 cards at a time */
+  @media (min-width: 768px) {
+    .reviews-carousel-slide {
+      flex: 0 0 calc(100% / 3);
+      max-width: calc(100% / 3);
+    }
+  }
+</style>
+
+<script>
+  const MOBILE_BP = 768;
+  const DESKTOP_VISIBLE = 3;
+
+  document.querySelectorAll<HTMLElement>("[data-carousel]").forEach((carousel) => {
+    const track = carousel.querySelector<HTMLElement>(".reviews-carousel-track");
+    const origSlides = Array.from(carousel.querySelectorAll<HTMLElement>(".reviews-carousel-slide"));
+    const dots = Array.from(carousel.querySelectorAll<HTMLButtonElement>(".reviews-carousel-dots button"));
+    const prevBtn = carousel.querySelector<HTMLButtonElement>(".prev-btn");
+    const nextBtn = carousel.querySelector<HTMLButtonElement>(".next-btn");
+    if (!track || origSlides.length === 0) return;
+
+    const N = origSlides.length;
+    let current = 0;
+    let timer: ReturnType<typeof setInterval>;
+    let isWrapping = false;
+    let activeClones: HTMLElement[] = [];
+
+    const isMobile = () => window.innerWidth < MOBILE_BP;
+    const vis = () => (isMobile() ? 1 : DESKTOP_VISIBLE);
+    // CSS sets the slide width; just read the computed value.
+    const slideWidth = () => origSlides[0].offsetWidth;
+
+    function setup() {
+      activeClones.forEach((c) => c.remove());
+      activeClones = [];
+
+      // Compute slide width from the visible container width divided by visible count.
+      // This avoids any CSS percentage resolution issues in flex children.
+      const v = vis();
+      const containerEl = carousel.querySelector<HTMLElement>(".overflow-hidden");
+      const containerWidth = containerEl!.getBoundingClientRect().width;
+      const pw = containerWidth / v;
+
+      origSlides.forEach((s) => {
+        s.style.flex = `0 0 ${pw}px`;
+        s.style.maxWidth = `${pw}px`;
+      });
+
+      // Append v clones of the first v slides so the forward wrap animates
+      // into content identical to position 0, then snaps back invisibly.
+      for (let i = 0; i < v; i++) {
+        const clone = origSlides[i].cloneNode(true) as HTMLElement;
+        track!.appendChild(clone);
+        activeClones.push(clone);
+      }
+
+      current = 0;
+      track!.style.transition = "none";
+      track!.style.transform = "translateX(0)";
+      refreshDots();
+    }
+
+    function goInstant(pos: number) {
+      track!.style.transition = "none";
+      track!.style.transform = `translateX(-${pos * slideWidth()}px)`;
+    }
+
+    function goAnimated(pos: number) {
+      track!.style.transition = "transform 0.5s ease-in-out";
+      track!.style.transform = `translateX(-${pos * slideWidth()}px)`;
+    }
+
+    function refreshDots() {
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("bg-gray-700", i === current);
+        dot.classList.toggle("bg-gray-300", i !== current);
+      });
+    }
+
+    function next() {
+      if (isWrapping) return;
+      if (current + 1 >= N) {
+        // Animate into clone zone (looks identical to position 0), then snap.
+        isWrapping = true;
+        current = 0;
+        refreshDots();
+        goAnimated(N);
+        setTimeout(() => { goInstant(0); isWrapping = false; }, 520);
+        return;
+      }
+      current += 1;
+      goAnimated(current);
+      refreshDots();
+    }
+
+    function prev() {
+      if (isWrapping) return;
+      if (current - 1 < 0) {
+        // Snap to last slide instantly (backward wrap is rare).
+        current = N - 1;
+        goInstant(N - 1);
+        refreshDots();
+        return;
+      }
+      current -= 1;
+      goAnimated(current);
+      refreshDots();
+    }
+
+    function jumpTo(index: number) {
+      if (isWrapping) return;
+      current = ((index % N) + N) % N;
+      goAnimated(current);
+      refreshDots();
+    }
+
+    function start() { timer = setInterval(next, 5000); }
+    function stop() { clearInterval(timer); }
+
+    carousel.addEventListener("mouseenter", stop);
+    carousel.addEventListener("mouseleave", start);
+
+    nextBtn?.addEventListener("click", () => { stop(); next(); start(); });
+    prevBtn?.addEventListener("click", () => { stop(); prev(); start(); });
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener("click", () => { stop(); jumpTo(i); start(); });
+    });
+
+    let resizeTimer: ReturnType<typeof setTimeout>;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => { stop(); setup(); start(); }, 200);
+    });
+
+    // Wait for full page load so CSS is applied and offsetWidth is accurate.
+    if (document.readyState === "complete") {
+      setup(); start();
+    } else {
+      window.addEventListener("load", () => { setup(); start(); });
+    }
+  });
+</script>
