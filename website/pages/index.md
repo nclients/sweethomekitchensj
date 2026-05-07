@@ -48,6 +48,7 @@ header:
     - { text: "Home", link: "/" }
     - { text: "Gallery", link: "#gallery" }
     - { text: "About Us", link: "#about-us" }
+    - { text: "Reviews", link: "#reviews" }
     - { text: "Contact Us", link: "#contact-us" }
     # - { text: "中文", link: "/zh-cn" }
   addOrderOnlineBtn: false
@@ -69,6 +70,7 @@ sections:
     bgVideoType: "gjw" # youtube | vimeo | gjw
     bgVideoId: "1i4giqrriahH3ncjbOByJU7Lc1no1c"
     bgImg: "background3.jpg"
+    mobileBgImg: "mobile_hero.webp"
     bgImgAlt: "Sweet Home Kitchen 家之味 - Best Food Today"
     isTextAlignCenter: true
     bgColor: "#000000"
@@ -320,6 +322,59 @@ sections:
   #     getDirectionBtnInsteadText: ""
 
   #     bottomRounded: "" # sm | md | lg | xl | 2xl | 3xl | full (only for background)
+  # Google Reviews
+  - type: "reviews"
+    id: "reviews"
+    carousel: true
+    title:
+      - "See What Guests Say"
+    description:
+      - "A few recent 5-star highlights from our Google reviews."
+    buttonText: "Read More on Google"
+    href: "https://maps.app.goo.gl/Kqk8pwJxqrkELa2a9"
+    buttonBgColor: "#E7383D"
+    items:
+      - body: "The restaurant is small but homey. Love the Nanjing duck, duck blood vermicelli soup and Xian Saozi noodle. The Xian Saozi noodle is super spicy so be careful. The waitor was so nice that he re-cooked it to be mild spicy. It tastes so yummy! I would definitely come again."
+        author:
+          name: "Ivy Shi"
+          handle: ""
+          imageUrl: null
+        rating:
+          rating: 5
+          maxStars: 5
+      - body: "We got the nanjing roasted duck and beef noodle soup here, and they were both very delicious! I would definitely come back here again. The roast duck was cut well, and its skin was very crispy. The sauce was special and complemented the duck well. I can see why this was highly recommended here."
+        author:
+          name: "Eric Chung"
+          handle: ""
+          imageUrl: null
+        rating:
+          rating: 5
+          maxStars: 5
+      - body: "We had the nanjing roasted duck and the duck blood vermicelli soup. Both had very large portions and both were really tasty! We ordered half a duck but there were two legs! Very rare to see when we order half, but very nice and generous of this restaurant! Servers were nice and attentive. Will come back!"
+        author:
+          name: "Betty Wu"
+          handle: ""
+          imageUrl: null
+        rating:
+          rating: 5
+          maxStars: 5
+      - body: "The food was all very tasty, especially the fried stinky tofu, and the pig ears. It was surprising to see so many choices for a small restaurant. The portions are very decent. All the staff were friendly and made sure to accommodate our dietary restrictions and requests."
+        author:
+          name: "Alex Zhang"
+          handle: ""
+          imageUrl: null
+        rating:
+          rating: 5
+          maxStars: 5
+      - body: "We ordered braised beef, salted duck, Shanghai sweet and sour pork, pork and shrimps wonton, house beef noodle soup, and another dry noodle dish. All of the foods are great. The service is great. The waitress is very patient and attentive. She explained the menu to us and very patient with my toddlers."
+        author:
+          name: "MK Yan"
+          handle: ""
+          imageUrl: null
+        rating:
+          rating: 5
+          maxStars: 5
+
   # textBlock - Information
   - type: "textBlock"
     noMarginTop: false
@@ -406,99 +461,115 @@ footer:
       url: "https://maps.app.goo.gl/Kqk8pwJxqrkELa2a9"
 
 seo:
-  metaTitle: ""
+  metaTitle: "Sweet Home Kitchen 家之味 | Authentic Chinese Restaurant in San Jose, CA"
 
-  metaDescription: "A Chinese restaurant located at 1312 Saratoga Ave, San Jose, CA, offers Jiangsu and Zhejiang dishes. We offer takeout and delivery."
+  metaDescription: "Authentic Nanjing & Jiangsu cuisine in San Jose, CA. Famous for roasted duck, salted duck, handmade dumplings & noodles. Dine-in & takeout at 1312 Saratoga Ave, San Jose."
 
-  keywords: "" # steak, restaurant, fine dining, New York
+  keywords: "Chinese restaurant San Jose, Nanjing duck San Jose, Jiangsu cuisine San Jose, Zhejiang cuisine, salted duck San Jose, handmade dumplings San Jose, Chinese food Saratoga Ave, Sweet Home Kitchen, 家之味"
 
-  img: "https://www.sweethomekitchensj.com/gallery/Salted%20duck.webp" # https://example.com/photos/1x1/photo.jpg
+  img: "https://www.sweethomekitchensj.com/SweetHome%20Kitchen%20%E5%AE%B6%E4%B9%8B%E5%91%B344.webp"
 
-  thisPageUrl: "https://www.sweethomekitchensj.com/" # https://example.com/
+  thisPageUrl: "https://www.sweethomekitchensj.com/"
 
-  locale: "en_US" # zh_TW | zh_CN | ja_JP
+  locale: "en_US"
 
-  # canonicalHref: "https://www.sweethomekitchensj.com/" # https://example.com/
+  canonicalHref: "https://www.sweethomekitchensj.com/"
 
-  # name: "Sweet Home Kitchen 家之味" # restaurant name
+  name: "Sweet Home Kitchen 家之味"
 
-  # images:
-  #   - "https://www.sweethomekitchensj.com/gallery/Shanghai Pork Ribs.webp" # https://example.com/photos/1x1/photo.jpg
-  #   - "https://www.sweethomekitchensj.com/gallery/Shu Style Gold Pomfret.webp" # https://example.com/photos/1x1/photo.jpg
-  #   - "https://www.sweethomekitchensj.com/gallery/SweetHome Kitchen 家之味5.webp" # https://example.com/photos/1x1/photo.jpg
-  #   -
-  # address:
-  #   streetAddress: "1312 Saratoga Ave" # 148 W 51st St
-  #   addressLocality: "San Jose" # New York
-  #   addressRegion: "CA" # NY
-  #   postalCode: "95129" # 10019
-  #   addressCountry: "US" # US
+  images:
+    - "https://www.sweethomekitchensj.com/SweetHome%20Kitchen%20%E5%AE%B6%E4%B9%8B%E5%91%B344.webp"
+    - "https://www.sweethomekitchensj.com/gallery1/Salted%20duck.webp"
+    - "https://www.sweethomekitchensj.com/gallery1/Shanghai%20Pork%20Ribs.webp"
+    - "https://www.sweethomekitchensj.com/gallery1/Braised%20Pork%20Hock.webp"
+    - "https://www.sweethomekitchensj.com/mobile_hero.webp"
 
-  # review:
-  #   ratingValue: "4.6" #4.5
-  #   bestRating: "5" # 5
-  #   authorName: "Google Review" # Google Review
-  #   reviewType: "Organization" # Organization. Google Review ->"Organization",
+  address:
+    streetAddress: "1312 Saratoga Ave"
+    addressLocality: "San Jose"
+    addressRegion: "CA"
+    postalCode: "95129"
+    addressCountry: "US"
 
-  # # review:
-  # #   ratingValue: "4.5"
-  # #   bestRating: "5"
-  # #   authorName: "Yelp"
-  # #   reviewType: "Organization" # Yelp 是一个组织，因此设置为 Organization
+  review:
+    ratingValue: "4.6"
+    bestRating: "5"
+    authorName: "Google Review"
+    reviewType: "Organization"
 
-  # # review:
-  # #   ratingValue: "4.9"
-  # #   bestRating: "5"
-  # #   authorName: "John Doe"
-  # #   reviewType: "Person"
+  geo:
+    latitude: 37.30051526803661
+    longitude: -121.98031741934436
 
-  # geo:
-  #   latitude: 37.30051526803661 # 40.761293
-  #   longitude: -121.98031741934436 # -73.982294
-  # url: "" # https://www.example.com
+  url: "https://www.sweethomekitchensj.com"
 
-  # telephone: "+1-408-689-7799" # +1212345678
+  telephone: "+1-408-689-7799"
 
-  # servesCuisine: ["Chinese", "Jiangsu and Zhejiang dishes"]
-  # priceRange: "$$" # $,$$,$$$,$$$$. $->Inexpensive, $$->Moderate, $$$->Expensive, $$$$->Luxury
-  # openingHours:
-  #   - dayOfWeek:
-  #       - "Monday"
-  #     opens: "11:00"
-  #     closes: "14:30"
-  #   - dayOfWeek:
-  #       - "Monday"
-  #     opens: "17:00"
-  #     closes: "19:30"
-  #   - dayOfWeek:
-  #       - "Tuesday"
-  #       - "Wednesday"
-  #       - "Thursday"
-  #       - "Friday"
-  #       - "Saturday"
-  #       - "Sunday"
-  #     opens: "11:00"
-  #     closes: "14:30"
-  #   - dayOfWeek:
-  #       - "Tuesday"
-  #       - "Wednesday"
-  #       - "Thursday"
-  #       - "Friday"
-  #       - "Saturday"
-  #       - "Sunday"
-  #     opens: "17:00"
-  #     closes: "20:30"
+  servesCuisine: ["Chinese", "Nanjing cuisine", "Jiangsu cuisine", "Zhejiang cuisine"]
 
-  # menu: "https://www.sweethomekitchensj.com/" # https://example.com/
-  # # acceptsReservations: true # true or false
-  # hasMenu: "https://www.sweethomekitchensj.com/" # https://crabbynewark.com/full-menu
-  # starRating:
-  #   ratingValue: "4.6" # 4.5
-  #   bestRating: "5" # 5
-  #   author: "Google Review" # Michelin Guide, Google Review
-  #   authorType: "organization" #person,organization
-  # currenciesAccepted: "USD" # USD
-  # paymentAccepted: "Cash, American Express, Apple Pay, MasterCard, Visa"
+  priceRange: "$$"
+
+  openingHours:
+    - dayOfWeek:
+        - "Monday"
+      opens: "11:00"
+      closes: "14:30"
+    - dayOfWeek:
+        - "Monday"
+      opens: "17:00"
+      closes: "19:30"
+    - dayOfWeek:
+        - "Tuesday"
+        - "Wednesday"
+        - "Thursday"
+        - "Friday"
+        - "Saturday"
+        - "Sunday"
+      opens: "11:00"
+      closes: "14:30"
+    - dayOfWeek:
+        - "Tuesday"
+        - "Wednesday"
+        - "Thursday"
+        - "Friday"
+        - "Saturday"
+        - "Sunday"
+      opens: "17:00"
+      closes: "20:30"
+
+  menu: "https://www.sweethomekitchensj.com/"
+  hasMenu: "https://www.sweethomekitchensj.com/"
+
+  starRating:
+    ratingValue: "4.6"
+    bestRating: "5"
+    author: "Google Review"
+    authorType: "organization"
+
+  currenciesAccepted: "USD"
+  paymentAccepted: "Cash, American Express, Apple Pay, Google Pay, MasterCard, Visa"
+
+  offers:
+    - name: "20% off cash discount on handmade dumplings"
+      description: "Enjoy a 20% discount when you pay with cash for our frozen handmade dumplings."
+      priceCurrency: "USD"
+      price: "varies"
+      image: ""
+    - name: "10% off cash discount on family meal takeout"
+      description: "Get 10% off when you pay with cash for family meal takeout."
+      priceCurrency: "USD"
+      price: "varies"
+      image: ""
+    - name: "Family Set: Any 3 dishes for $40 with free rice"
+      description: "Choose any 3 dishes for just $40, includes free rice."
+      priceCurrency: "USD"
+      price: "40"
+      image: ""
+    - name: "Free rice with lunch"
+      description: "Receive free rice with any lunch order."
+      priceCurrency: "USD"
+      price: "0"
+      image: ""
 
   # hasMenuSection:
   #   - name: "南京风味 Nanjing Dish" # Appetizers
