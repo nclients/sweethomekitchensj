@@ -283,43 +283,34 @@ const images = getImagesFromFolders("/public/" + section?.folderPath);
   }
 </section>
 
-<script>
-  const MOBILE_LIMIT = 5;
-  const DESKTOP_LIMIT = 8;
-  const MOBILE_BP = 768;
+<style is:global>
+  /* Mobile: show first 5 only */
+  [data-gallery-wrapper] [data-gallery-item]:nth-child(n+6) { display: none; }
+  /* Desktop (≥768px): show first 8 */
+  @media (min-width: 768px) {
+    [data-gallery-wrapper] [data-gallery-item]:nth-child(6),
+    [data-gallery-wrapper] [data-gallery-item]:nth-child(7),
+    [data-gallery-wrapper] [data-gallery-item]:nth-child(8) { display: block; }
+    [data-gallery-wrapper] [data-gallery-item]:nth-child(n+9) { display: none; }
+  }
+  /* Expanded: show all */
+  [data-gallery-wrapper].gallery-expanded [data-gallery-item] { display: block !important; }
+</style>
 
+<script>
   function initGalleries() {
-    document.querySelectorAll<HTMLElement>("[data-gallery-list]").forEach((list) => {
-      const items = Array.from(list.querySelectorAll<HTMLElement>("[data-gallery-item]"));
+    document.querySelectorAll<HTMLElement>("[data-gallery-list]:not([data-gallery-init])").forEach((list) => {
+      list.setAttribute("data-gallery-init", "");
       const wrapper = list.closest<HTMLElement>("[data-gallery-wrapper]");
       const btn = wrapper?.querySelector<HTMLButtonElement>("[data-gallery-more-btn]");
-      if (!btn) return;
-
-      let expanded = false;
-
-      function applyLimit() {
-        const limit = window.innerWidth < MOBILE_BP ? MOBILE_LIMIT : DESKTOP_LIMIT;
-        const hasHidden = items.length > limit;
-        items.forEach((item, i) => {
-          item.style.display = expanded || i < limit ? "" : "none";
-        });
-        btn!.style.display = hasHidden || expanded ? "" : "none";
-        btn!.textContent = expanded ? "Show Less" : "Show More";
-      }
+      if (!btn || !wrapper) return;
 
       btn.addEventListener("click", () => {
-        expanded = !expanded;
-        applyLimit();
+        const expanded = wrapper.classList.toggle("gallery-expanded");
+        btn.textContent = expanded ? "Show Less" : "Show More";
         if (!expanded) {
           list.closest("section")?.scrollIntoView({ behavior: "smooth", block: "start" });
         }
-      });
-
-      applyLimit();
-      let resizeTimer: ReturnType<typeof setTimeout>;
-      window.addEventListener("resize", () => {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(applyLimit, 150);
       });
     });
   }
@@ -329,8 +320,5 @@ const images = getImagesFromFolders("/public/" + section?.folderPath);
   } else {
     initGalleries();
   }
-  window.addEventListener("load", () => {
-    // Re-run in case of late DOM mutations (e.g. Cloudflare Rocket Loader)
-    initGalleries();
-  });
+  window.addEventListener("load", initGalleries);
 </script>
