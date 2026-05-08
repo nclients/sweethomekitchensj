@@ -298,27 +298,16 @@ const images = getImagesFromFolders("/public/" + section?.folderPath);
 </style>
 
 <script>
-  function initGalleries() {
-    document.querySelectorAll<HTMLElement>("[data-gallery-list]:not([data-gallery-init])").forEach((list) => {
-      list.setAttribute("data-gallery-init", "");
-      const wrapper = list.closest<HTMLElement>("[data-gallery-wrapper]");
-      const btn = wrapper?.querySelector<HTMLButtonElement>("[data-gallery-more-btn]");
-      if (!btn || !wrapper) return;
-
-      btn.addEventListener("click", () => {
-        const expanded = wrapper.classList.toggle("gallery-expanded");
-        btn.textContent = expanded ? "Show Less" : "Show More";
-        if (!expanded) {
-          list.closest("section")?.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-      });
-    });
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initGalleries);
-  } else {
-    initGalleries();
-  }
-  window.addEventListener("load", initGalleries);
+  document.addEventListener("click", (e) => {
+    const btn = (e.target as Element).closest<HTMLButtonElement>("[data-gallery-more-btn]");
+    if (!btn) return;
+    const wrapper = btn.closest<HTMLElement>("[data-gallery-wrapper]");
+    if (!wrapper) return;
+    const list = wrapper.querySelector("[data-gallery-list]");
+    const expanded = wrapper.classList.toggle("gallery-expanded");
+    btn.textContent = expanded ? "Show Less" : "Show More";
+    if (!expanded && list) {
+      list.closest("section")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
 </script>
