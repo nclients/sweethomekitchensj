@@ -571,7 +571,10 @@ function hexToRgb(hex:string) {
   }
 
   // Call the function after the iframe has loaded
-  document.getElementById("gjw-video")!.onload = function () {
-    muteGJWVideo();
-  };
+  const gjwVideo = document.getElementById("gjw-video");
+  if (gjwVideo) {
+    gjwVideo.onload = function () {
+      muteGJWVideo();
+    };
+  }
 </script>
