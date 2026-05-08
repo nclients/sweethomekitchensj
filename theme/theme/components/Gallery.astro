@@ -226,6 +226,7 @@ const images = getImagesFromFolders("/public/" + section?.folderPath);
               </Fragment>
             ))}
           </div>
+          <div data-gallery-wrapper>
           <ul
             role="list"
             data-gallery-list
@@ -275,6 +276,7 @@ const images = getImagesFromFolders("/public/" + section?.folderPath);
               </button>
             </div>
           )}
+          </div>
         </div>
       </div>
     )
@@ -286,38 +288,49 @@ const images = getImagesFromFolders("/public/" + section?.folderPath);
   const DESKTOP_LIMIT = 12;
   const MOBILE_BP = 768;
 
-  document.querySelectorAll<HTMLElement>("[data-gallery-list]").forEach((list) => {
-    const items = Array.from(list.querySelectorAll<HTMLElement>("[data-gallery-item]"));
-    const btn = list.closest("div")?.querySelector<HTMLButtonElement>("[data-gallery-more-btn]");
-    if (!btn) return;
+  function initGalleries() {
+    document.querySelectorAll<HTMLElement>("[data-gallery-list]").forEach((list) => {
+      const items = Array.from(list.querySelectorAll<HTMLElement>("[data-gallery-item]"));
+      const wrapper = list.closest<HTMLElement>("[data-gallery-wrapper]");
+      const btn = wrapper?.querySelector<HTMLButtonElement>("[data-gallery-more-btn]");
+      if (!btn) return;
 
-    let expanded = false;
+      let expanded = false;
 
-    function applyLimit() {
-      const limit = window.innerWidth < MOBILE_BP ? MOBILE_LIMIT : DESKTOP_LIMIT;
-      const hasHidden = items.length > limit;
-      items.forEach((item, i) => {
-        item.style.display = expanded || i < limit ? "" : "none";
+      function applyLimit() {
+        const limit = window.innerWidth < MOBILE_BP ? MOBILE_LIMIT : DESKTOP_LIMIT;
+        const hasHidden = items.length > limit;
+        items.forEach((item, i) => {
+          item.style.display = expanded || i < limit ? "" : "none";
+        });
+        btn!.style.display = hasHidden || expanded ? "" : "none";
+        btn!.textContent = expanded ? "Show Less" : "Show More";
+      }
+
+      btn.addEventListener("click", () => {
+        expanded = !expanded;
+        applyLimit();
+        if (!expanded) {
+          list.closest("section")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       });
-      if (btn) {
-        btn.style.display = hasHidden && !expanded ? "" : (expanded ? "" : "none");
-        btn.textContent = expanded ? "Show Less" : "Show More";
-      }
-    }
 
-    btn.addEventListener("click", () => {
-      expanded = !expanded;
       applyLimit();
-      if (!expanded) {
-        list.closest("section")?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+      let resizeTimer: ReturnType<typeof setTimeout>;
+      window.addEventListener("resize", () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(applyLimit, 150);
+      });
     });
+  }
 
-    applyLimit();
-    let resizeTimer: ReturnType<typeof setTimeout>;
-    window.addEventListener("resize", () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(applyLimit, 150);
-    });
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initGalleries);
+  } else {
+    initGalleries();
+  }
+  window.addEventListener("load", () => {
+    // Re-run in case of late DOM mutations (e.g. Cloudflare Rocket Loader)
+    initGalleries();
   });
 </script>
