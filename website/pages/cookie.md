@@ -62,7 +62,7 @@ header:
   otherBtnHref: "https://maps.app.goo.gl/6wtdZhCK2oE3hFaw8"
 
 sections:
-  - type: "terms"
+  - type: "cookie"
 footer:
   cookie: true
   mode: 1 # 1

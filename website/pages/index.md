@@ -1,4 +1,4 @@
----    
+---
 layout: "ssg-theme-astro/layouts/main.astro" # This line of code should remain unchanged.
 
 tag: "GTM-NHXRZ6W"
@@ -46,10 +46,10 @@ header:
   menuTextColor: "#000000"
   menu:
     - { text: "Home", link: "/" }
-    - { text: "Gallery", link: "#gallery" }
-    - { text: "About Us", link: "#about-us" }
-    - { text: "Reviews", link: "#reviews" }
-    - { text: "Contact Us", link: "#contact-us" }
+    - { text: "Gallery", link: "/#gallery" }
+    - { text: "About Us", link: "/#about-us" }
+    - { text: "Reviews", link: "/#reviews" }
+    - { text: "Contact Us", link: "/#contact-us" }
     # - { text: "中文", link: "/zh-cn" }
   addOrderOnlineBtn: false
   orderOnlineBtnInsteadText: ""
@@ -419,6 +419,7 @@ sections:
     buttonText: ""
 
 footer:
+  cookie: true
   mode: 1 # 1
   noMarginTop: true
   bgImg: "Sweet Home Kitchen 家之味.webp"

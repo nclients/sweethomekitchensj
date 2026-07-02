@@ -38,7 +38,7 @@ banner:
 
 # header
 header:
-  logoSize: 45
+  logoSize: 55
   textAfterLogo:
     text: ""
     size: 16
@@ -50,8 +50,9 @@ header:
     - { text: "Home", link: "/" }
     - { text: "Gallery", link: "/#gallery" }
     - { text: "About Us", link: "/#about-us" }
+    - { text: "Reviews", link: "/#reviews" }
     - { text: "Contact Us", link: "/#contact-us" }
-    - { text: "中文", link: "/zh-cn" }
+    # - { text: "中文", link: "/zh-cn" }
   addOrderOnlineBtn: false
   orderOnlineBtnInsteadText: ""
   addTableReservationBtn: false
@@ -63,12 +64,9 @@ header:
   otherBtnHref: "https://maps.app.goo.gl/6wtdZhCK2oE3hFaw8"
 
 sections:
-  # hero
-
-  # Gallery
   - type: "accessibility"
-
 footer:
+  cookie: true
   mode: 1 # 1
   noMarginTop: true
   bgImg: "Sweet Home Kitchen 家之味.webp"
@@ -80,7 +78,7 @@ footer:
   openingHours:
     - "Monday"
     - "11:00 AM - 2:30 PM, 5:00 PM - 7:30 PM"
-    - "Tuesday - Sunday"
+    - "Tuesday ~ Sunday"
     - "11:00 AM - 2:30 PM, 5:00 PM - 8:30 PM"
 
   isLogo: false
@@ -88,7 +86,7 @@ footer:
 
   # menu:
   #   - { text: "Home", link: "/" }
-  #   - { text: "Gallery", link: "/#gallery" }
+  #   - { text: "Gallery", link: "#gallery" }
   #   - { text: "About Us", link: "/#about-us" }
   #   - { text: "Contact Us", link: "/#contact-us" }
   #   - { text: "中文", link: "/zh-cn" }
@@ -105,10 +103,11 @@ footer:
   yelpLink: ""
 
   paymentMethod: "applePay,visa,amex,alipay,mastercard" # alipay,applePay,cash,discover,googlePay,jcb,maestro,mastercard,stripe,unionPay,visa,weChatPay,payPal
-  addressInsteadText: ""
+  addressInsteadText: "Address"
   address:
     - address: "1312 Saratoga Ave, San Jose, CA 95129"
       url: "https://maps.app.goo.gl/Kqk8pwJxqrkELa2a9"
+
 ---
 
 <!-- hello world -->
