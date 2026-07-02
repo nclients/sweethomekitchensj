@@ -69,7 +69,7 @@ sections:
     sectionType: "video" # video | imgWithText | imgBg
     bgVideoType: "gjw" # youtube | vimeo | gjw
     bgVideoId: "1i4giqrriahH3ncjbOByJU7Lc1no1c"
-    bgImg: "background3.jpg"
+    bgImg: "background3.webp"
     mobileBgImg: "mobile_hero.webp"
     bgImgAlt: "Sweet Home Kitchen 家之味 - Best Food Today"
     isTextAlignCenter: true
@@ -413,7 +413,7 @@ sections:
       - "20% off cash discount on frozen handmade dumplings. 10% off cash discount on family meal takeout. Free rice with lunch."
     descriptionColor: ""
     descriptionSize: 16
-    imgName: "special_offer2.png"
+    imgName: "special_offer2.webp"
     imgAlt: "20% off cash discount on frozen handmade dumplings. 10% off cash discount on family meal takeout. Free rice with lunch. Delivery available."
     imgHref: "https://www.bestfoodtodayus.com/ordering/restaurant/menu?restaurant_uid=456b427f-d650-4555-808c-c65bb2e17da3"
     buttonText: ""
