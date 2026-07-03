@@ -1,6 +1,6 @@
 <!-- ---
 layout: "ssg-theme-astro/layouts/main.astro" #Don't touch this line of code.
-tag: "GTM-NHXRZ6W"
+tag: ""
 title: "Sweet Home Kitchen 家之味 - Best Food Today"
 favicon: "favicon.ico"
 logo: "logo.webp"
