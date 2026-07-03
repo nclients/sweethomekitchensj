@@ -15,11 +15,11 @@ orderOnlineLink: ""
 tableReservationLink: ""
 tel: "408-689-7799"
 address: 1312 Saratoga Ave, San Jose, CA 95129
+email: ""
 creationDate: 1 Jan 2025
 
 banner:
   text:
-    # - boldText: "🥳 Special Offer"
     - boldText: "20% off cash discount"
     - text: " on frozen handmade dumplings."
     - boldText: "10% off cash discount"
@@ -30,8 +30,6 @@ banner:
     - text: " with lunch."
     - boldText: ""
     - text: ""
-
-  # add more text...
   textColor: "#ffffff"
   bgColor: "#E7383D"
   bgOpacity: "1" # 0~1
@@ -64,7 +62,7 @@ header:
   otherBtnHref: "https://maps.app.goo.gl/6wtdZhCK2oE3hFaw8"
 
 sections:
-  - type: "accessibility"
+  - type: "cookie"
 footer:
   cookie: true
   mode: 1 # 1
@@ -109,5 +107,3 @@ footer:
       url: "https://maps.app.goo.gl/Kqk8pwJxqrkELa2a9"
 
 ---
-
-<!-- hello world -->

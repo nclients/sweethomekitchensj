@@ -1,7 +1,7 @@
 ---
 layout: "ssg-theme-astro/layouts/main.astro" # This line of code should remain unchanged.
 
-tag: ""
+tag: "GTM-NHXRZ6W"
 title: "Sweet Home Kitchen 家之味"
 favicon: "favicon.ico"
 logo: "logo.webp"
@@ -64,6 +64,7 @@ header:
 sections:
   - type: "terms"
 footer:
+  cookie: true
   mode: 1 # 1
   noMarginTop: true
   bgImg: "Sweet Home Kitchen 家之味.webp"
